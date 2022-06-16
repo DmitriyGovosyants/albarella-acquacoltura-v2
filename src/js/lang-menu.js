@@ -1,6 +1,6 @@
 import { langData } from "./lang-data";
 const langMenuBtns = document.querySelectorAll('.js-lang-menu-btn');
-const allLang = ['en', 'it'];
+const htmlEl = document.querySelector('html');
 
 langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch));
 changeLanguage();
@@ -17,6 +17,8 @@ function changeLanguage() {
 
     const lang = localStorage.getItem('language')
 
+    htmlEl.lang = lang;
+
     for (let key in langData.en) {
         let elem = document.querySelector('.lng-' + key);
 
@@ -25,32 +27,3 @@ function changeLanguage() {
         }
     }
 }
-
-
-// function onLangSwitch(e) {
-//     const currentLang = e.target.textContent;
-//     location.href = window.location.pathname + '#' + currentLang;
-//     location.reload();
-// }
-
-// function changeLanguage() {
-//     let hash = window.location.hash;
-//     hash = hash.substr(1);
-    
-
-//     if (!allLang.includes(hash)) {
-//         location.href = window.location.pathname + '#en';
-//         location.reload();
-//     }
-//     console.log(location.href)
-//     // document.querySelector('title').innerHTML = langArr[hash]['unit'];
-//     for (let key in langData.en) {
-//         let elem = document.querySelector('.lng-' + key);
-
-//         if (elem) {
-//             elem.innerHTML = langData[hash][key];
-//         }
-//     }
-// }
-
-// changeLanguage();
