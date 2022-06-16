@@ -1,31 +1,55 @@
 import { langData } from "./lang-data";
 const langMenuBtns = document.querySelectorAll('.js-lang-menu-btn');
-const allLang = ['it', 'en'];
+const allLang = ['en', 'it'];
 
 langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch))
 
 function onLangSwitch(e) {
-    const currentLang = e.target.textContent;
-    location.href = window.location.pathname + '#' + currentLang;
+    localStorage.setItem('language', `${e.target.textContent}`);
     location.reload();
 }
 
 function changeLanguage() {
-    let hash = window.location.hash;
-    hash = hash.substr(1);
-
-    if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#it';
-        location.reload();
+    if (!localStorage.getItem('language')) {
+        return;
     }
-    // document.querySelector('title').innerHTML = langArr[hash]['unit'];
+
+    const lang = localStorage.getItem('language')
+
     for (let key in langData.en) {
         let elem = document.querySelector('.lng-' + key);
 
         if (elem) {
-            elem.innerHTML = langData[hash][key];
+            elem.innerHTML = langData[lang][key];
         }
     }
 }
 
 changeLanguage();
+// function onLangSwitch(e) {
+//     const currentLang = e.target.textContent;
+//     location.href = window.location.pathname + '#' + currentLang;
+//     location.reload();
+// }
+
+// function changeLanguage() {
+//     let hash = window.location.hash;
+//     hash = hash.substr(1);
+    
+
+//     if (!allLang.includes(hash)) {
+//         location.href = window.location.pathname + '#en';
+//         location.reload();
+//     }
+//     console.log(location.href)
+//     // document.querySelector('title').innerHTML = langArr[hash]['unit'];
+//     for (let key in langData.en) {
+//         let elem = document.querySelector('.lng-' + key);
+
+//         if (elem) {
+//             elem.innerHTML = langData[hash][key];
+//         }
+//     }
+// }
+
+// changeLanguage();
