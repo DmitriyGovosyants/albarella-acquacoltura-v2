@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03;
+
+    background-color: var(--bgc-third);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mq(mobile) {
+        width: 440px;
+    }
+
+    @include mq(tablet) {
+        width: 700px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    @include mq(desktop) {
+        width: 1110px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-fixed-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% + 1px);
+
+    padding-top: 60px;
+    
+    @include mq(tablet) {
+        padding-top: 80px;
+    }
+}
+
+.main-content {
+    flex-grow: 1;
+}

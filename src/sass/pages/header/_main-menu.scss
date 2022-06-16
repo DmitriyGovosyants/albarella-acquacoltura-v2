@@ -1,0 +1,119 @@
+.menu {
+    width: 280px;
+    
+    @include mq(notDesktop) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5;
+
+        height: 100%;
+
+        background-color: var(--bgc-main);
+        border-bottom-left-radius: 50px;
+        box-shadow: -3px 3px 10px rgb(211, 191, 191);
+
+        pointer-events: none;
+        transform: translateX(120%);
+        transition: transform var(--animation-duration) var(--animation-timing-function);
+    }
+
+    @include mq(tablet) {
+        width: 500px;
+    }
+
+    @include mq(desktop) {
+        width: 100%;
+    }
+
+    &.is-open {
+        pointer-events: auto;
+        transform: translateX(0);
+
+        @media screen and (max-height: 650px) {
+            overflow: scroll;
+            border-bottom-left-radius: 0px;
+        }
+    }
+
+    &.is-open {
+
+    }
+}
+
+.menu__container {
+    @include mq(notDesktop) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+    @include mq(tablet-only) {
+        text-align: center;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+.menu__mob-btn-open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    background-color: transparent;
+
+    @include mq(desktop) {
+        display: none;
+    }
+}
+
+.menu__mob-icon-open {
+    fill: var(--text-main);
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+.menu__mob-btn-close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    opacity: 0;
+    transform: translateX(-200%) rotateZ(0deg);
+    transition: transform 500ms var(--animation-timing-function) 500ms,
+            opacity 500ms var(--animation-timing-function) 500ms;
+
+    @include mq(desktop) {
+        display: none;
+    }
+
+    .menu.is-open & {
+        opacity: 1;
+        transform: translateY(0) rotateZ(360deg);
+    }
+}
+
+.menu__mob-icon-close {
+    fill: var(--text-main);
+    transition: fill var(--animation-duration) var(--animation-timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
