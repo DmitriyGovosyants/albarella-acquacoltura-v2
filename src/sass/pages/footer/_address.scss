@@ -3,7 +3,7 @@
   font-style: normal;
 }
 
-.address__text {
+.address__label {
   margin-bottom: 15px;
   font-size: 20px;
   color: var(--text-main);
@@ -14,9 +14,10 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 300px;
-  padding: 10px 20px;
+  padding: 5px 20px;
 
   font-size: 20px;
+  line-height: 30px;
   color: var(--main-blue);
 
   border: 1px solid transparent;
