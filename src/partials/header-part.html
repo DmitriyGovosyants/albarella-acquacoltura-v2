@@ -22,14 +22,14 @@
             <li class="nav__item"><a class="nav__link lng-nav-6" href="./contacts.html" data-id="contacts">contacts</a></li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--small" href="mailto:info@albarellaacquacoltura.com">
+        <ul class="contacts-main contacts-main--is-hidden">
+          <li class="contacts-main__item">
+            <a class="contacts-main__link contacts__link--small" href="mailto:info@albarellaacquacoltura.com">
               info@albarellaacquacoltura.com
             </a>
           </li>
-          <li class="contacts__item">
-            <a class="contacts__link contacts__link--big" href="tel:+393917014072">
+          <li class="contacts-main__item">
+            <a class="contacts-main__link contacts__link--big" href="tel:+393917014072">
               +39 391 701 4072
             </a>
           </li>
@@ -42,6 +42,13 @@
             <button class="lang-menu__btn js-lang-menu-btn" type="button">en</button>
           </li>
         </ul>
+        <button class="color-theme js-color-theme-toggle">
+          <div class="sun js-color-theme-sun"></div>
+          <div class="moon visible js-color-theme-moon">
+            <div class="star"></div>
+            <div class="star small"></div>
+          </div>
+        </button>
       </div>
       <button class="menu__mob-btn-close js-menu-mob-btn-close" type="button" aria-label="mobile-menu-close">
         <svg class="menu__mob-icon-close" width="50" height="50">

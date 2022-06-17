@@ -1,4 +1,4 @@
-const anchors = document.querySelectorAll('a[href*="#"]');
+import { refs } from "./refs";
 
 const handleAnchorTo = e => {
     e.preventDefault();
@@ -13,6 +13,6 @@ const handleAnchorTo = e => {
     });
 }
 
-for (let anchor of anchors) {
+for (let anchor of refs.anchors) {
   anchor.addEventListener('click', handleAnchorTo);
 }

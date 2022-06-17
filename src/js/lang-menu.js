@@ -1,8 +1,8 @@
 import { langData } from "./lang-data";
-const langMenuBtns = document.querySelectorAll('.js-lang-menu-btn');
-const htmlEl = document.querySelector('html');
+import { refs } from "./refs";
 
-langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch));
+refs.langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch));
+
 changeLanguage();
 
 function onLangSwitch(e) {
@@ -17,7 +17,7 @@ function changeLanguage() {
 
     const lang = localStorage.getItem('language')
 
-    htmlEl.lang = lang;
+    refs.htmlEl.lang = lang;
 
     for (let key in langData.en) {
         let elem = document.querySelector('.lng-' + key);
