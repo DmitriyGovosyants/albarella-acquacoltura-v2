@@ -8,10 +8,10 @@
     height: 46px;
     padding: 12px;
 
-    background: transparent;
+    background-color: var(--bgc-main);
     border: none;
-    box-shadow: 1px 1px 10px rgb(136, 88, 88);
-    border-radius: 5px;
+    // box-shadow: 1px 1px 10px rgb(136, 88, 88);
+    // border-radius: 5px;
 
     @include mq(notDesktop) {
         margin-top: 20px;
@@ -37,7 +37,7 @@
     background: radial-gradient(circle,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0) 50%,
-                #d7fc70 50%);
+                #DAA520 50%);
     
     pointer-events: none;
     opacity: 0;
@@ -54,10 +54,10 @@
 
     border-radius: 2px;
     background: radial-gradient(circle,
-            #FCE570 30%,
+            #DAA520 30%,
             rgba(0, 0, 0, 0) 31%,
             rgba(0, 0, 0, 0) 50%,
-            #FCE570 50%);
+            #DAA520 50%);
     transform: rotate(45deg);
 }
 

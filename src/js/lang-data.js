@@ -9,8 +9,9 @@ export const langData = {
         "footer-address-text": "Our Location",
         "footer-address-link": "45010 Rosolina, Province of Rovigo, Italy",
         "footer-socials": "Join Us",
-        "footer-bottom-1": "© 2022 - Albarella Acquacoltura",
-        "footer-bottom-2": "All Rights Reserved",
+        "footer-contacts": "Contacts",
+        "footer-bottom-text": "© 2022 - Albarella Acquacoltura",
+        "footer-bottom-privacy": "All Rights Reserved",
         "back-to-top": "to top",
     },
     "it": {
@@ -23,8 +24,9 @@ export const langData = {
         "footer-address-text": "La nostra Posizione",
         "footer-address-link": "45010 Rosolina, Provincia di Rovigo, Italia",
         "footer-socials": "Unitevi",
-        "footer-bottom-1": "© 2022 - Albarella Acquacoltura",
-        "footer-bottom-2": "Tutti i diritti riservati",
+        "footer-contacts": "Contatti",
+        "footer-bottom-text": "© 2022 - Albarella Acquacoltura",
+        "footer-bottom-privacy": "Tutti i diritti riservati",
         "back-to-top": "in cima alla",
     },
 }

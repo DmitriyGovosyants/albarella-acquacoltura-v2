@@ -1,0 +1,36 @@
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 20px;
+
+  text-align: center;
+  border-top: 1px solid var(--text-main);
+
+  @include mq(tablet) {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+  }
+}
+
+.footer-bottom__text {
+  color: var(--text-main);
+
+  @include mq(mobile-only) {
+    margin-bottom: 10px;
+  }
+
+  @include mq(tablet) {
+    &::after {
+      content: "|";
+      margin-left: 5px;
+    }
+  }
+}
+
+.footer-bottom__privacy {
+  color: var(--text-main);
+
+  @include mq(tablet) {
+    margin-left: 5px;
+  }
+}

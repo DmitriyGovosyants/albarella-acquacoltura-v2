@@ -1,0 +1,19 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    background-color: var(--bgc-main);
+
+    @include mq(tablet) {
+        padding-top: 30px;
+    }
+}
+
+.footer__container {
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+}
