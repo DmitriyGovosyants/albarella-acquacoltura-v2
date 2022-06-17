@@ -8,7 +8,11 @@
     --animation-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    --header-fix-mobile: 60px;
+    --header-fix-desktop: 80px;
+
     --main-black: #081617;
+    --main-white: rgb(255, 255, 255);
     --main-blue: rgb(135, 135, 212);
 
     --text-main: #ca9b4a;
@@ -22,13 +26,14 @@
     --accent-color: rgb(235, 235, 235);
     --accent-color-transparent: rgb(200, 214, 194);
 
+    --mob-menu-outer-shadow: rgb(211, 191, 191);
     --scroll-track-shadow: rgba(0, 0, 0, 0.3);
     --scroll-thumb-shadow: rgba(0, 0, 0, 0.5);
 }
 
 .color-theme-ligth {
     --text-main: rgb(0, 0, 0);
-    --bgc-main: #f0e0e0;
+    --bgc-main: #f5f4fa;
     --accent-color: rgb(39, 25, 87);
     --main-blue: rgb(102, 102, 192);
 }

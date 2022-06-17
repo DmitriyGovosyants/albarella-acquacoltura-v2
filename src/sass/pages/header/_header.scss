@@ -5,12 +5,12 @@
     z-index: 10;
 
     width: 100%;
-    height: 60px;
+    height: var(--header-fix-mobile);
     background-color: var(--bgc-main);
     border-bottom: 1px solid var(--bgc-third);
 
     @include mq(tablet) {
-        height: 80px;
+        height: var(--header-fix-desktop);
     }
 }
 

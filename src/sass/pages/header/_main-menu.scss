@@ -11,7 +11,7 @@
 
         background-color: var(--bgc-main);
         border-bottom-left-radius: 50px;
-        box-shadow: -3px 3px 10px rgb(211, 191, 191);
+        box-shadow: -3px 3px 10px var(--mob-menu-outer-shadow);
 
         pointer-events: none;
         transform: translateX(120%);
@@ -30,7 +30,7 @@
         pointer-events: auto;
         transform: translateX(0);
 
-        @media screen and (max-height: 650px) {
+        @media screen and (max-height: 700px) {
             overflow: scroll;
             border-bottom-left-radius: 0px;
         }
@@ -115,5 +115,20 @@
     &:hover,
     &:focus {
         fill: var(--accent-color);
+    }
+}
+
+.menu__label {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 22px;
+    text-decoration: underline;
+    color: var(--text-main);
+
+    @include mq(desktop) {
+        display: none;
     }
 }

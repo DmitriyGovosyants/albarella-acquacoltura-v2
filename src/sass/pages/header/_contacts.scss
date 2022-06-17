@@ -1,16 +1,14 @@
-.contacts-main {
+.contacts-menu {
     @include mq(notDesktop) {
         margin-top: 30px;
     }
 
-    &--is-hidden {
-        @include mq(desktop) {
-            display: none;
-        }
+    @include mq(desktop) {
+        display: none;
     }
 }
 
-.contacts-main__item {
+.contacts-menu__item {
     &:not(:last-child) {
         margin-bottom: 10px;
     }
@@ -24,7 +22,7 @@
     }
 }
 
-.contacts-main__link {
+.contacts-menu__link {
     display: block;
     padding-right: 10px;
     padding-left: 10px;

@@ -1,10 +1,35 @@
 .hero {
-  height: 800px;
-  background-image: url('../images/mainimg.jpg');
+  background-image: url('../images/hero.jpg');
   background-size: cover;
   background-position: center;
+  padding-top: 300px;
+  padding-bottom: 30px;
+
+  @include mq(tablet) {
+    padding-top: 450px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 600px;
+    padding-bottom: 50px;
+  }
 }
 
 .hero__container {
   position: relative;
+
+}
+
+.hero__label {
+  margin-bottom: 20px;
+
+  font-family: Roboto Slab, sans-serif;
+  font-size: 36px;
+  color: var(--text-main);
+}
+
+.hero__title {
+  font-family: Gloria Hallelujah, sans-serif;
+  font-size: 36px;
+  color: var(--main-white);
 }
