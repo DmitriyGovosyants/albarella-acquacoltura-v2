@@ -10,8 +10,6 @@
 
     background-color: var(--bgc-main);
     border: none;
-    // box-shadow: 1px 1px 10px rgb(136, 88, 88);
-    // border-radius: 5px;
 
     @include mq(notDesktop) {
         margin-top: 20px;
