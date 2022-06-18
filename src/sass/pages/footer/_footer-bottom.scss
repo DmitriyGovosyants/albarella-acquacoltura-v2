@@ -3,7 +3,7 @@
   padding-top: 20px;
 
   text-align: center;
-  border-top: 1px solid var(--text-main);
+  border-top: 1px solid var(--footer-line);
 
   @include mq(tablet) {
     display: flex;

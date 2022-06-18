@@ -1,0 +1,14 @@
+.join-us {
+  @include mq(mobile-only) {
+    margin-top: 30px;
+  }
+
+  text-align: center;
+}
+
+.join-us__text {
+  margin-bottom: 15px;
+
+  font-size: 20px;
+  color: var(--text-main);
+}
