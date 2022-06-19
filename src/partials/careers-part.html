@@ -15,6 +15,59 @@
             officiis cupiditate voluptates? Beatae est rem tempore doloribus eius placeat amet omnis deserunt, ipsa
             optio sint saepe vel veritatis dolores quod at assumenda earum rerum quae eum voluptate nihil? Numquam quo
             placeat dolorum deserunt fugit, pariatur assumenda expedita suscipit nam accusantium eius harum ex vero odit
-            nihil quibusdam.</p>
+            nihil quibusdam.
+        </p>
+        <div class="wrapper">
+            <div class="form">
+                <form action="#" id="form" class="form__body">
+                    <h1 class="form__title">Apply for available position</h1>
+                    <div class="form__item">
+                        <label for="formFirstName" class="form__label">First name*</label>
+                        <input id="formFirstName" type="text" name="firstName" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formLastName" class="form__label">Last name*</label>
+                        <input id="formLastName" type="text" name="lastName" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">E-mail*</label>
+                        <input id="formEmail" type="email" name="email" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formPhoneNumber" class="form__label">Phone number</label>
+                        <input id="formPhoneNumber" type="tel" name="phoneNumber" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Comment</label>
+                        <textarea id="formMessage" name="comment" class="form__input"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Choice position</div>
+                        <select name="position" class="select">
+                            <option value="aquacultureEngineer">Aquaculture Engineer/Mechanic</option>
+                            <option value="hatcheryTechnician">Hatchery Technician</option>
+                            <option value="flupsyTechnician">Flupsy Technician</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__label">Attach a resume</div>
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formResume" accept=".doc, .docx, .pdf" type="file" name="resume" class="file__input">
+                                <button class="file__button">choose</button>
+                            </div>
+                            <div class="file__preview"></div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
+                            <label for="formAgreement" class="checkbox__label"><span>I give my consent to the processing of personal data in accordance with <a href="" class="checkbox__terms-link">terms</a>*</span></label>
+                        </div>
+                    </div>
+                    <button class="form__button" type="submit">Submit</button>
+                </form>
+            </div>  
+        </div>
     </div>
 </section>
