@@ -38,6 +38,14 @@
   &:focus {
     box-shadow: 0px 0px 15px var(--form-accent-shadow-color);
   }
+  
+  &._error {
+    box-shadow:
+        -2px 2px 15px var(--form-error-shadow-color),
+        2px -2px 15px var(--form-error-shadow-color),
+        2px 2px 15px var(--form-error-shadow-color),
+        -2px -2px 15px var(--form-error-shadow-color);
+  }
 }
 
 textarea.form__input {
@@ -59,6 +67,7 @@ textarea.form__input {
 
 .file__item {
   position: relative;
+  width: 100px;
 }
 
 .file__input {
@@ -78,6 +87,7 @@ textarea.form__input {
   justify-content: center;
   align-items: center;
   min-height: 40px;
+  width: 100%;
   padding: 0px 20px;
 
   color: var(--form-text-color-main);
@@ -115,6 +125,14 @@ textarea.form__input {
 
     background-color: var(--form-bgc-color-checkbox);
     border-radius: 4px;
+
+    .checkbox._error & {
+      box-shadow:
+        -2px 2px 15px var(--form-error-shadow-color),
+        2px -2px 15px var(--form-error-shadow-color),
+        2px 2px 15px var(--form-error-shadow-color),
+        -2px -2px 15px var(--form-error-shadow-color);
+    }
   }
 
   &::after {

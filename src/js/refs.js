@@ -14,4 +14,7 @@ export const refs = {
     colorModeToggle: document.querySelector('.js-color-theme-toggle'),
     colorModeSun: document.querySelector('.js-color-theme-sun'),
     colorModeMoon: document.querySelector('.js-color-theme-moon'),
+
+    formCareers: document.querySelector('.js-form-careers'),
+    formReq: document.querySelectorAll('._req'),
 }
