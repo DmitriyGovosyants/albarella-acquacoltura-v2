@@ -63,11 +63,14 @@ textarea.form__input {
   border-radius: 5px;
 }
 
-.file {}
+.file {
+  display: flex;
+  align-items: center;
+}
 
 .file__item {
   position: relative;
-  width: 100px;
+  min-width: 100px;
 }
 
 .file__input {
@@ -90,15 +93,10 @@ textarea.form__input {
   width: 100%;
   padding: 0px 20px;
 
+  font-size: 18px;
   color: var(--form-text-color-main);
   background-color: var(--form-file-load-color);
   border-radius: 30px;
-}
-
-.file__preview {
-  display: inline-block;
-  max-width: 100px;
-  padding: 10px 0px 0px 0px;
 }
 
 .checkbox {}
@@ -114,6 +112,7 @@ textarea.form__input {
 
   font-size: 16px;
   line-height: 140%;
+  font-style: italic;
   cursor: pointer;
 
   &::before {

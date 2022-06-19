@@ -17,4 +17,6 @@ export const refs = {
 
     formCareers: document.querySelector('.js-form-careers'),
     formReq: document.querySelectorAll('._req'),
+    formResume: document.querySelector('.js-form-resume'),
+    formResumeBtn: document.querySelector('.js-form-resume-btn'),
 }
