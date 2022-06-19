@@ -16,15 +16,35 @@ Notify.init({
 refs.formCareers.addEventListener('submit', handleFormSend);
 refs.formResume.addEventListener('change', handleFileLoad);
 
-function handleFormSend(e) {
+async function handleFormSend(e) {
   e.preventDefault();
 
   let error = formValidate();
+  let formData = new FormData(e.target);
+  // formData.append('resume', refs.formResume.files[0]);
+  let currentLang = localStorage.getItem('language');
 
   if (error === 0) {
+    let response = await fetch('http://localhost:8000/mail', {
+      method: 'POST',
+      body: JSON.stringify({author: "Mango", body: "CRUD is awesome",}),
+      headers: {
+        "Content-Type": "application/json; charset=UTF-8",
+      },
+    });
+    console.log(response)
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message);
+
+    } else {
+      alert('negative response')
+      console.log(formData.forEach((t) => console.log(t))); // перенести в ОК
+      refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn']; // перенести в ОК
+      e.target.reset();  // перенести в ОК
+    }
     
   } else {
-    const currentLang = localStorage.getItem('language');
     Notify.failure(langData[currentLang]['form-validate-message-error']);
   }
 }
@@ -76,19 +96,17 @@ function uploadFile(file) {
   const extDoc = 'application/msword';
   const extDocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   const extPdf = 'application/pdf';
-  const currentLang = localStorage.getItem('language');
+  let currentLang = localStorage.getItem('language');
 
   if (![extDoc, extDocx, extPdf].includes(file.type)) {
-    Notify.failure(langData[currentLang]['form-validate-resume-ext-error']);
     refs.formResume.value = '';
-    refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+    uploadExtError(currentLang);
     return;
   }
   
   if (file.size > 10 * 1024 * 1024) {
-    Notify.failure(langData[currentLang]['form-validate-resume-size-error']);
     refs.formResume.value = '';
-    refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+    uploadSizeError(currentLang);
     return;
   }
 
@@ -100,4 +118,14 @@ function uploadFile(file) {
     alert('nonono');
   }
   reader.readAsDataURL(file);
+}
+
+function uploadExtError(currentLang) {
+  Notify.failure(langData[currentLang]['form-validate-resume-ext-error']);
+  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+}
+
+function uploadSizeError(currentLang) {
+  Notify.failure(langData[currentLang]['form-validate-resume-size-error']);
+  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
 }

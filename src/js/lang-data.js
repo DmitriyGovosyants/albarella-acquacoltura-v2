@@ -53,7 +53,7 @@ export const langData = {
 
         "back-to-top": "in cima alla",
 
-        "form-title": "Candidati per la posizione disponibile",
+        "form-title": "Candidati per una posizione",
         "form-position": "Posizione scelta",
         // "form-position-1": "Ingegnere/meccanico di acquacoltura",
         // "form-position-2": "Incubatoio Tecnico",
