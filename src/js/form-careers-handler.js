@@ -20,22 +20,33 @@ async function handleFormSend(e) {
   e.preventDefault();
 
   let error = formValidate();
-  let formData = new FormData(e.target);
+  const formData = new FormData(e.target);
+  const careersFormData = {};
+  formData.forEach((value, name) => {
+    careersFormData[name] = value;
+  })
+  console.log(JSON.stringify(careersFormData));
   // formData.append('resume', refs.formResume.files[0]);
   let currentLang = localStorage.getItem('language');
 
   if (error === 0) {
-    let response = await fetch('http://localhost:8000/mail', {
+    const option = {
       method: 'POST',
-      body: JSON.stringify({author: "Mango", body: "CRUD is awesome",}),
+      body: JSON.stringify(careersFormData),
       headers: {
-        "Content-Type": "application/json; charset=UTF-8",
-      },
-    });
+        "Content-Type": "application/json; charset=UTF-8"
+      }
+    }
+    console.log(option)
+    let response = await fetch('http://localhost:8000/', option);
     console.log(response)
+
     if (response.ok) {
+      // console.log('1')
       let result = await response.json();
-      alert(result.message);
+      console.log(result)
+      alert(response.status);
+      // alert(Object.keys())
 
     } else {
       alert('negative response')
@@ -115,7 +126,7 @@ function uploadFile(file) {
     refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn-done'];
   };
   reader.onerror = () => {
-    alert('nonono');
+    alert('Try again');
   }
   reader.readAsDataURL(file);
 }
