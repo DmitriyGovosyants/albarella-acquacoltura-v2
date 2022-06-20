@@ -20,15 +20,18 @@ async function handleFormSend(e) {
   e.preventDefault();
 
   let error = formValidate();
-  const formData = new FormData(e.target);
-  const careersFormData = {};
-
-  formData.forEach((value, name) => {
-    careersFormData[name] = value;
-  })
-  console.log(careersFormData)
-  
   let currentLang = localStorage.getItem('language');
+  const form = e.currentTarget.elements;
+  const formData = new FormData();
+
+  for (let i = 0; i < form.length; i += 1) {
+    if (form[i].nodeName === 'BUTTON') {
+      continue;
+    }
+    
+    formData.append(form[i].name, form[i].value);
+  }
+  formData.append('files', refs.formResume.files[0]);
 
   if (error !== 0) {
     Notify.failure(langData[currentLang]['form-valid-fields-error']);
@@ -37,10 +40,7 @@ async function handleFormSend(e) {
   if (error === 0) {
     const option = {
       method: 'POST',
-      body: JSON.stringify(careersFormData),
-      headers: {
-        "Content-Type": "application/json; charset=UTF-8"
-      }
+      body: formData
     }
     
     try {
@@ -108,17 +108,17 @@ function handleFileLoad() {
 }
 
 function uploadFile(file) {
-  const extDoc = 'application/msword';
-  const extDocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+  // const extDoc = 'application/msword';
+  // const extDocx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   const extPdf = 'application/pdf';
   let currentLang = localStorage.getItem('language');
 
-  if (![extDoc, extDocx, extPdf].includes(file.type)) {
+  if (![extPdf].includes(file.type)) {
     uploadFileError(currentLang, 'form-valid-resume-ext-error');
     return;
   }
   
-  if (file.size > 10 * 1024 * 1024) {
+  if (file.size > 5 * 1024 * 1024) {
     uploadFileError(currentLang, 'form-valid-resume-size-error');
     return;
   }
