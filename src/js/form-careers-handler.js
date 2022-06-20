@@ -21,42 +21,56 @@ async function handleFormSend(e) {
 
   let error = formValidate();
   const formData = new FormData(e.target);
+  // console.log(e.currentTarget.elements)
+  // formData.forEach((value, name) => {
+  //   formData.append(name, value);
+  // })
+  // formData.append('name', "fedor");
+  // formData.append('files', refs.formResume.files[0]);
+  // formData.forEach((value, name) => console.table(name, value))
   const careersFormData = {};
+
   formData.forEach((value, name) => {
     careersFormData[name] = value;
   })
-  console.log(JSON.stringify(careersFormData));
-  // formData.append('resume', refs.formResume.files[0]);
+  console.log(careersFormData)
+  
   let currentLang = localStorage.getItem('language');
+
+  if (error !== 0) {
+    Notify.failure(langData[currentLang]['form-valid-fields-error']);
+  }
 
   if (error === 0) {
     const option = {
       method: 'POST',
       body: JSON.stringify(careersFormData),
+      // body: formData,
       headers: {
         "Content-Type": "application/json; charset=UTF-8"
+        // "Content-Type": "multipart/form-data"
+        // "Content-Type": false
       }
     }
-    console.log(option)
-    let response = await fetch('http://localhost:8000/', option);
-    console.log(response)
-
-    if (response.ok) {
-      // console.log('1')
-      let result = await response.json();
-      console.log(result)
-      alert(response.status);
-      // alert(Object.keys())
-
-    } else {
-      alert('negative response')
-      console.log(formData.forEach((t) => console.log(t))); // перенести в ОК
-      refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn']; // перенести в ОК
-      e.target.reset();  // перенести в ОК
-    }
     
-  } else {
-    Notify.failure(langData[currentLang]['form-validate-message-error']);
+    try {
+      let response = await fetch('http://localhost:9000/', option);
+
+      if (response.ok) {
+        let result = await response.json();
+        console.log(result.status);
+        if (result.status === 'Data sent failure') {
+          return Notify.failure(langData[currentLang]['form-error-send']);
+        }
+
+        Notify.success(langData[currentLang]['form-successfully-send']);
+        refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+        e.target.reset();
+      }
+    } catch (error) {
+      console.log(error);
+      Notify.failure(langData[currentLang]['form-error-send']);
+    }
   }
 }
 
@@ -110,33 +124,35 @@ function uploadFile(file) {
   let currentLang = localStorage.getItem('language');
 
   if (![extDoc, extDocx, extPdf].includes(file.type)) {
-    refs.formResume.value = '';
-    uploadExtError(currentLang);
+    uploadFileError(currentLang, 'form-valid-resume-ext-error');
     return;
   }
   
   if (file.size > 10 * 1024 * 1024) {
-    refs.formResume.value = '';
-    uploadSizeError(currentLang);
+    uploadFileError(currentLang, 'form-valid-resume-size-error');
     return;
   }
 
   const reader = new FileReader();
   reader.onload = () => {
-    refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn-done'];
+    uploadFileTrue(currentLang);
   };
   reader.onerror = () => {
-    alert('Try again');
+    uploadFileFalse(currentLang);
   }
   reader.readAsDataURL(file);
 }
 
-function uploadExtError(currentLang) {
-  Notify.failure(langData[currentLang]['form-validate-resume-ext-error']);
+function uploadFileError(currentLang, error) {
+  refs.formResume.value = '';
+  Notify.failure(langData[currentLang][error]);
   refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
 }
 
-function uploadSizeError(currentLang) {
-  Notify.failure(langData[currentLang]['form-validate-resume-size-error']);
-  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+function uploadFileTrue(currentLang) {
+  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn-done'];
+}
+
+function uploadFileFalse(currentLang) {
+  Notify.failure(langData[currentLang]['form-valid-resume-load-error']);
 }
