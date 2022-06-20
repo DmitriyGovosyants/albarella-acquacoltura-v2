@@ -166,6 +166,8 @@ textarea.form__input {
   align-items: center;
   width: 100%;
   min-height: 60px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 18px;
   font-weight: 700;
@@ -178,7 +180,7 @@ textarea.form__input {
   border-radius: 20px;
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--animation-timing-function);;
-
+  
   &:hover {
     background-color: var(--form-sumbit-hover);
   }
