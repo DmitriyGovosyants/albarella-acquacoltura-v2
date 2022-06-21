@@ -5,6 +5,12 @@ body {
     letter-spacing: 0.03;
 
     background-color: var(--bgc-third);
+
+    &.modal-open {
+        @include mq(notDesktop) {
+            overflow: hidden;
+        }
+    }
 }
 
 html,

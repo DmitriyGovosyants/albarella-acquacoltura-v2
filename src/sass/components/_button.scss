@@ -1,0 +1,27 @@
+.btn {
+  position: relative;
+  top: 0;
+  padding: 15px 30px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--form-text-color-main);
+
+  background-color: var(--form-accent-main);
+  box-shadow: 3px 5px 0 var(--form-sumbit-shadow);
+  border-radius: 10px;
+
+  &:hover {
+      background-color: var(--form-sumbit-hover);
+    }
+  
+  &:active {
+    top: 3px;
+    box-shadow: 1px 2px 0 var(--form-sumbit-shadow);
+  }
+}

@@ -1,0 +1,63 @@
+<div class="backdrop backdrop--hidden js-backdrop">
+  <div class="form">
+    <button class="form__btn-close js-modal-careers-btn-close" type="button" aria-label="mobal-close">
+      <svg class="form__btn-close-icon" width="50" height="50">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form action="#" class="form__body js-form-careers">
+      <h1 class="form__title item-a lng-form-title">Apply for available position</h1>
+      <div class="form__item item-b">
+        <div class="form__label lng-form-position">Choice position</div>
+        <select name="position" class="select">
+          <option value="aquacultureEngineer" class="lng-form-position-1">Aquaculture Engineer/Mechanic</option>
+          <option value="hatcheryTechnician" class="lng-form-position-2">Hatchery Technician</option>
+          <option value="flupsyTechnician" class="lng-form-position-3">Flupsy Technician</option>
+        </select>
+      </div>
+      <div class="form__item item-c">
+        <label for="formFirstName" class="form__label lng-form-first-name">First name *</label>
+        <input id="formFirstName" type="text" name="firstName" class="form__input _req">
+      </div>
+      <div class="form__item item-d">
+        <label for="formLastName" class="form__label lng-form-last-name">Last name *</label>
+        <input id="formLastName" type="text" name="lastName" class="form__input _req">
+      </div>
+      <div class="form__item item-e">
+        <label for="formEmail" class="form__label lng-form-email">E-mail *</label>
+        <input id="formEmail" type="email" name="email" class="form__input _req _email">
+      </div>
+      <div class="form__item item-f">
+        <label for="formPhoneNumber" class="form__label lng-form-phone-number">Phone number</label>
+        <input id="formPhoneNumber" type="tel" name="phoneNumber" class="form__input">
+      </div>
+      <div class="form__item item-g">
+        <label for="formMessage" class="form__label lng-form-comment">Comment</label>
+        <textarea id="formMessage" name="comment" class="form__input"></textarea>
+      </div>
+      <div class="form__item item-h">
+        <div class="form__label lng-form-resume-label">Attach a resume</div>
+        <div class="file">
+          <div class="file__item">
+            <input accept=".doc, .docx, .pdf" type="file" name="resume" class="file__input js-form-resume">
+            <button class="file__button lng-form-resume-upload-btn js-form-resume-btn">&#10149; Upload file &lt; 5 MB,
+              .pdf</button>
+          </div>
+        </div>
+      </div>
+      <div class="form__item item-i">
+        <div class="checkbox">
+          <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+          <label for="formAgreement" class="checkbox__label">
+            <div class="checkbox__text">
+              <span class="lng-form-agreement">I give my consent to the processing of personal data in accordance
+                with</span>
+              <a href="" class="checkbox__terms-link lng-form-agreement-terms">terms *</a>
+            </div>
+          </label>
+        </div>
+      </div>
+      <button class="form__button item-j lng-form-submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

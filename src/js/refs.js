@@ -15,6 +15,9 @@ export const refs = {
     colorModeSun: document.querySelector('.js-color-theme-sun'),
     colorModeMoon: document.querySelector('.js-color-theme-moon'),
 
+    backdrop: document.querySelector('.js-backdrop'),
+    modalCareersBtnOpen: document.querySelector('.js-modal-careers-btn-open'),
+    modalCareersBtnClose: document.querySelector('.js-modal-careers-btn-close'),
     formCareers: document.querySelector('.js-form-careers'),
     formReq: document.querySelectorAll('._req'),
     formResume: document.querySelector('.js-form-resume'),
