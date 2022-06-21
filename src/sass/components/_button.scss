@@ -15,6 +15,7 @@
   background-color: var(--form-accent-main);
   box-shadow: 3px 5px 0 var(--form-sumbit-shadow);
   border-radius: 10px;
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
 
   &:hover {
       background-color: var(--form-sumbit-hover);

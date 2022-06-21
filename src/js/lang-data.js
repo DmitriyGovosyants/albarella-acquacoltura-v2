@@ -54,7 +54,7 @@ export const langData = {
         "footer-bottom-text": "© 2022 - Albarella Acquacoltura",
         "footer-bottom-privacy": "Tutti i diritti riservati",
 
-        "back-to-top": "in cima alla",
+        "back-to-top": "in alto",
 
         "form-title": "Candidati per una posizione",
         "form-position": "Posizione scelta",
