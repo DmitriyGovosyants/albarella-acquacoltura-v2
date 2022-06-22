@@ -5,6 +5,7 @@ export const refs = {
     mobileMenuNav: document.querySelector('.js-menu-mob-nav'),
 
     backToTopBtn: document.querySelector('.js-back-to-top-btn'),
+    loader: document.querySelector('.loader'),
 
     langMenuBtns: document.querySelectorAll('.js-lang-menu-btn'),
     htmlEl: document.querySelector('html'),
@@ -22,4 +23,5 @@ export const refs = {
     formReq: document.querySelectorAll('._req'),
     formResume: document.querySelector('.js-form-resume'),
     formResumeBtn: document.querySelector('.js-form-resume-btn'),
+    formSubmitBtn: document.querySelector('.js-form-submit-btn'),
 }

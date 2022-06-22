@@ -4,8 +4,7 @@ import { refs } from "./refs";
 
 Notify.init({
   width: '280px',
-  position: 'center-top',
-  distance: '100px',
+  position: 'center-center',
   opacity: 1,
   timeout: 3000,
   clickToClose: true,
@@ -18,6 +17,9 @@ refs.formResume.addEventListener('change', handleFileLoad);
 
 async function handleFormSend(e) {
   e.preventDefault();
+  
+  refs.formSubmitBtn.disabled = 'true';
+  refs.loader.classList.add('loader--is-active');
 
   let error = formValidate();
   let currentLang = localStorage.getItem('language');
@@ -34,6 +36,8 @@ async function handleFormSend(e) {
   formData.append('files', refs.formResume.files[0]);
 
   if (error !== 0) {
+    refs.formSubmitBtn.removeAttribute('disabled');
+    refs.loader.classList.remove('loader--is-active');
     Notify.failure(langData[currentLang]['form-valid-fields-error']);
   }
 
@@ -48,7 +52,10 @@ async function handleFormSend(e) {
 
       if (response.ok) {
         let result = await response.json();
+        refs.formSubmitBtn.removeAttribute('disabled');
+        refs.loader.classList.remove('loader--is-active');
         console.log(result.status);
+
         if (result.status === 'Data sent failure') {
           return Notify.failure(langData[currentLang]['form-error-send']);
         }
@@ -59,6 +66,8 @@ async function handleFormSend(e) {
       }
     } catch (error) {
       console.log(error);
+      refs.formSubmitBtn.removeAttribute('disabled');
+      refs.loader.classList.remove('loader--is-active');
       Notify.failure(langData[currentLang]['form-error-send']);
     }
   }

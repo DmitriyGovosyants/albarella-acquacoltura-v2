@@ -269,7 +269,7 @@ textarea.form__input {
   }
 }
 
-.form__button {
+.form__submit {
   position: relative;
   top: 0;
 
@@ -303,6 +303,12 @@ textarea.form__input {
 
   &:active {
     top: 3px;
+    box-shadow: 0 2px 0 var(--form-sumbit-shadow);
+  }
+
+  &:disabled {
+    top: 3px;
+    background-color: var(--form-sumbit-hover);
     box-shadow: 0 2px 0 var(--form-sumbit-shadow);
   }
 } 
