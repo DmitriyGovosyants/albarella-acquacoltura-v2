@@ -43,8 +43,11 @@
 }
 
 .color-theme-ligth {
-    --text-main: rgb(8, 0, 0);
-    --bgc-main: #ffffff;
-    --accent-color: rgb(39, 25, 87);
-    --main-blue: rgb(102, 102, 192);
+    --text-main: rgb(255, 255, 255);
+    --bgc-main: #0088cc;
+    --accent-color: rgb(255, 255, 255);
+    --main-blue: rgb(58, 58, 139);
+    --text-logo: #dfb05f;
+
+    --footer-line: #ffffff4d;
 }

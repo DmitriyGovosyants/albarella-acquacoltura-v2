@@ -22,6 +22,7 @@
 
     @include mq(desktop) {
         margin-left: 10px;
+        cursor: pointer;
     }
 }
 
@@ -35,7 +36,7 @@
     background: radial-gradient(circle,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0) 50%,
-                #DAA520 50%);
+                #ffffff 50%);
     
     pointer-events: none;
     opacity: 0;
@@ -52,10 +53,10 @@
 
     border-radius: 2px;
     background: radial-gradient(circle,
-            #DAA520 30%,
+            #ffffff 30%,
             rgba(0, 0, 0, 0) 31%,
             rgba(0, 0, 0, 0) 50%,
-            #DAA520 50%);
+            #ffffff 50%);
     transform: rotate(45deg);
 }
 
