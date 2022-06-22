@@ -7,16 +7,16 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-left: 12px;
 
     font-size: 14px;
-    color: black;
+    color: var(--main-black);
     
     background-color: var(--accent-color-transparent);
-    border-radius: 100px 0px 0px 0px;
+    border-top-left-radius: 80%;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
     outline: none;
     
@@ -24,12 +24,14 @@
         padding-top: 12px;
         padding-right: 12px;
         padding-bottom: 12px;
-        padding-left: 25px;
+        padding-left: 20px;
     }
 
-    &:hover {
-        color: var(--accent-color);
-        background-color: var(--main-blue);
+    @include mq(desktop) {
+        &:hover {
+            color: var(--accent-color);
+            background-color: var(--main-blue);
+        }
     }
 }
 
