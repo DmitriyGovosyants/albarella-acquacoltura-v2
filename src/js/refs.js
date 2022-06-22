@@ -8,6 +8,7 @@ export const refs = {
     loader: document.querySelector('.loader'),
 
     langMenuBtns: document.querySelectorAll('.js-lang-menu-btn'),
+    
     htmlEl: document.querySelector('html'),
 
     anchors: document.querySelectorAll('a[href*="#"]'),

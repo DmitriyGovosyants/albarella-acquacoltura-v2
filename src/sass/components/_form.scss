@@ -293,7 +293,7 @@ textarea.form__input {
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--animation-timing-function);;
   
-  @include mq(desktop) {
+  @include mq(tablet) {
     max-width: 260px;
   }
 

@@ -1,9 +1,14 @@
 import { refs } from './refs';
 
-  refs.modalCareersBtnOpen.addEventListener('click', toggleModal);
-  refs.modalCareersBtnClose.addEventListener('click', toggleModal);
+  refs.modalCareersBtnOpen.addEventListener('click', onModalOpen);
+  refs.modalCareersBtnClose.addEventListener('click', onModalClose);
 
-function toggleModal() {
-    document.body.classList.toggle('modal-open');
-    refs.backdrop.classList.toggle('backdrop--hidden');
-  }
+function onModalOpen() {
+  document.body.classList.add('modal-open');
+  refs.backdrop.classList.remove('backdrop--hidden');
+}
+
+function onModalClose() {
+  document.body.classList.remove('modal-open');
+  refs.backdrop.classList.add('backdrop--hidden');
+}

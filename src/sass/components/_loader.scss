@@ -9,9 +9,16 @@
   height: 40px;
 
   border-radius: 50%;
-  border-top: 4px solid white;
+  border-top: 4px solid var(--main-white);
   border-right: 4px solid transparent;
   animation: rotation 1000ms linear infinite;
+
+  @include mq(mobile-only) {
+    right: 70px;
+    bottom: 55px;
+    width: 30px;
+    height: 30px;
+  }
 
   &:after {
     content: '';
@@ -20,6 +27,11 @@
     top: 0;
     width: 40px;
     height: 40px;
+    
+    @include mq(mobile-only) {
+      width: 30px;
+      height: 30px;
+    }
 
     border-radius: 50%;
     border-left: 4px solid var(--text-main);
