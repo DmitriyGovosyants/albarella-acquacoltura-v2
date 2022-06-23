@@ -4,7 +4,7 @@ export const refs = {
     closeMenuBtn: document.querySelector('.js-menu-mob-btn-close'),
     mobileMenuNav: document.querySelector('.js-menu-mob-nav'),
 
-    backToTopBtn: document.querySelector('.js-back-to-top-btn'),
+    backToTopBtn: document.querySelector('.js-btn-top'),
     loader: document.querySelector('.loader'),
 
     langMenuBtns: document.querySelectorAll('.js-lang-menu-btn'),

@@ -14,7 +14,7 @@ export const langData = {
         "footer-bottom-text": "© 2022 - Albarella Acquacoltura",
         "footer-bottom-privacy": "All Rights Reserved",
 
-        "back-to-top": "to top",
+        "btn-top": "to top",
 
         "form-title": "Apply for available position",
         "form-position": "Job title",
@@ -27,7 +27,7 @@ export const langData = {
         "form-phone-number": "Phone number",
         "form-comment": "Comment",
         "form-resume-label": "Attach a resume",
-        "form-resume-upload-btn": "&#10149; Upload file &lt; 5 MB, .pdf",
+        "form-resume-upload-btn": "&#10149; Choose file &lt; 5 MB, .pdf",
         "form-agreement": "I give my consent to the processing of personal data in accordance with ",
         "form-agreement-terms": "terms *",
         "form-submit": "Submit",
@@ -53,7 +53,7 @@ export const langData = {
         "footer-bottom-text": "© 2022 - Albarella Acquacoltura",
         "footer-bottom-privacy": "Tutti i diritti riservati",
 
-        "back-to-top": "in alto",
+        "btn-top": "in alto",
 
         "form-title": "Candidati per una posizione",
         "form-position": "Titolo di lavoro",
@@ -66,7 +66,7 @@ export const langData = {
         "form-phone-number": "Numero di telefono",
         "form-comment": "Commento",
         "form-resume-label": "Allegare un curriculum",
-        "form-resume-upload-btn": "&#10149; Carica file &lt; 5 MB, .pdf",
+        "form-resume-upload-btn": "&#10149; Scegliere file &lt; 5 MB, .pdf",
         "form-agreement": "Do il mio consenso al trattamento dei dati personali in conformità con ",
         "form-agreement-terms": "termini *",
         "form-submit": "invia",
