@@ -1,34 +1,32 @@
-.btn {
+.button {
   position: relative;
   top: 0;
-  padding: 15px 30px;
+
   display: flex;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
+  align-items: center;
 
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: var(--form-text-color-main);
 
-  background-color: var(--form-accent-main);
-  box-shadow: 3px 5px 0 var(--form-sumbit-shadow);
-  border-radius: 10px;
-  transition: background-color var(--animation-duration) var(--animation-timing-function);
+  border-radius: 20px;
 
   &--box-shadow:focus {
     box-shadow: 1px 1px 15px var(--main-blue);
   }
-  
+
+  &:focus {
+    outline: none;
+  }
+
   &:hover {
     background-color: var(--form-sumbit-hover);
   }
-  
+
   &:active {
     top: 3px;
     box-shadow: 1px 2px 0 var(--form-sumbit-shadow);
   }
-
-
 }

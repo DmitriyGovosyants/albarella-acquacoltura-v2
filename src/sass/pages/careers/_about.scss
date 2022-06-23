@@ -1,0 +1,10 @@
+.careers-about__button {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 30px;
+
+  background-color: var(--form-accent-main);
+  box-shadow: 3px 5px 0 var(--form-sumbit-shadow);
+  transition: background-color var(--animation-duration) var(--animation-timing-function);
+}
