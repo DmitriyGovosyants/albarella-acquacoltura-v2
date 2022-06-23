@@ -1,0 +1,23 @@
+.careers-hero {
+  background-image: url('../images/careers/hero.jpeg');
+  background-size: cover;
+  background-position: top;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
+  @include mq(tablet) {
+    padding-top: 250px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 300px;
+    padding-bottom: 50px;
+  }
+}
+
+.careers-hero__title {
+  font-family: Gloria Hallelujah, sans-serif;
+  font-size: 46px;
+  color: var(--main-white);
+  text-shadow: var(--main-blue) 5px 5px;
+}
