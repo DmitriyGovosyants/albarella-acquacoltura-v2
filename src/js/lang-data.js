@@ -17,7 +17,7 @@ export const langData = {
         "back-to-top": "to top",
 
         "form-title": "Apply for available position",
-        "form-position": "Choice position",
+        "form-position": "Job title",
         "form-position-1": "Aquaculture Engineer/Mechanic",
         "form-position-2": "Hatchery Technician",
         "form-position-3": "Flupsy Technician",
@@ -28,7 +28,6 @@ export const langData = {
         "form-comment": "Comment",
         "form-resume-label": "Attach a resume",
         "form-resume-upload-btn": "&#10149; Upload file &lt; 5 MB, .pdf",
-        "form-resume-upload-btn-done": "&#9989; File has been uploaded!",
         "form-agreement": "I give my consent to the processing of personal data in accordance with ",
         "form-agreement-terms": "terms *",
         "form-submit": "Submit",
@@ -57,7 +56,7 @@ export const langData = {
         "back-to-top": "in alto",
 
         "form-title": "Candidati per una posizione",
-        "form-position": "Posizione scelta",
+        "form-position": "Titolo di lavoro",
         "form-position-1": "Ingegnere/meccanico di acquacoltura",
         "form-position-2": "Incubatoio Tecnico",
         "form-position-3": "Flupsy Tecnico",
@@ -68,7 +67,6 @@ export const langData = {
         "form-comment": "Commento",
         "form-resume-label": "Allegare un curriculum",
         "form-resume-upload-btn": "&#10149; Carica file &lt; 5 MB, .pdf",
-        "form-resume-upload-btn-done": "&#9989; Il file è stato caricato",
         "form-agreement": "Do il mio consenso al trattamento dei dati personali in conformità con ",
         "form-agreement-terms": "termini *",
         "form-submit": "invia",

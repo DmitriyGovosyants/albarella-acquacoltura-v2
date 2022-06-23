@@ -134,7 +134,7 @@ function uploadFile(file) {
 
   const reader = new FileReader();
   reader.onload = () => {
-    uploadFileTrue(currentLang);
+    uploadFileTrue();
   };
   reader.onerror = () => {
     uploadFileFalse(currentLang);
@@ -148,8 +148,8 @@ function uploadFileError(currentLang, error) {
   refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
 }
 
-function uploadFileTrue(currentLang) {
-  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn-done'];
+function uploadFileTrue() {
+  refs.formResumeBtn.innerHTML = `&#9989 ${refs.formResume.files[0].name}`;
 }
 
 function uploadFileFalse(currentLang) {
