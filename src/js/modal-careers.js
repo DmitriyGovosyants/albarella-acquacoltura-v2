@@ -1,14 +1,22 @@
 import { refs } from './refs';
 
-  refs.modalCareersBtnOpen.addEventListener('click', onModalOpen);
-  refs.modalCareersBtnClose.addEventListener('click', onModalClose);
+  refs.modalCareersBtnOpen.addEventListener('click', handleModalOpen);
+  refs.modalCareersBtnClose.addEventListener('click', handleModalClose);
 
-function onModalOpen() {
+function handleModalOpen() {
   document.body.classList.add('modal-open');
   refs.backdrop.classList.remove('backdrop--hidden');
+  document.addEventListener('keydown', handleModalCloseByEsc);
 }
 
-function onModalClose() {
+function handleModalClose() {
   document.body.classList.remove('modal-open');
   refs.backdrop.classList.add('backdrop--hidden');
+  document.removeEventListener('keydown', handleModalCloseByEsc);
+}
+
+function handleModalCloseByEsc({code}) {
+  if (code === "Escape") {
+    handleModalClose();
+  }
 }

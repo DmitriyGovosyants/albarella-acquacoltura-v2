@@ -36,4 +36,8 @@ button {
     @include mq(desktop) {
         cursor: pointer;
     }
+
+    &:focus {
+        outline: none;
+    }
 }

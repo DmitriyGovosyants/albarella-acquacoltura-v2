@@ -17,12 +17,18 @@
   border-radius: 10px;
   transition: background-color var(--animation-duration) var(--animation-timing-function);
 
+  &--box-shadow:focus {
+    box-shadow: 1px 1px 15px var(--main-blue);
+  }
+  
   &:hover {
-      background-color: var(--form-sumbit-hover);
-    }
+    background-color: var(--form-sumbit-hover);
+  }
   
   &:active {
     top: 3px;
     box-shadow: 1px 2px 0 var(--form-sumbit-shadow);
   }
+
+
 }

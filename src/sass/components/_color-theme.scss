@@ -7,6 +7,7 @@
     width: 46px;
     height: 46px;
 
+    background-color: transparent;
     border: none;
 
     @include mq(notDesktop) {
@@ -20,7 +21,6 @@
 
     @include mq(desktop) {
         margin-left: 10px;
-        cursor: pointer;
     }
 }
 
