@@ -1,7 +1,10 @@
 import { refs } from './refs';
 
-  refs.modalCareersBtnOpen.addEventListener('click', handleModalOpen);
-  refs.modalCareersBtnClose.addEventListener('click', handleModalClose);
+for (let i = 0; i < refs.modalCareersBtnsOpen.length; i += 1) {
+  refs.modalCareersBtnsOpen[i].addEventListener('click', handleModalOpen);
+}
+
+refs.modalCareersBtnClose.addEventListener('click', handleModalClose);
 
 function handleModalOpen() {
   document.body.classList.add('modal-open');

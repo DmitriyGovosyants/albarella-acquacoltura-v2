@@ -4,13 +4,16 @@ export const refs = {
     closeMenuBtn: document.querySelector('.js-menu-mob-btn-close'),
     mobileMenuNav: document.querySelector('.js-menu-mob-nav'),
 
+    vacancy: document.querySelector('.js-vacancy'),
+    vacancyDescription: document.querySelector('.js-vacancy-description'),
+    vacancyCloseBtn: document.querySelector('.js-vacancy-close'),
+    
     backToTopBtn: document.querySelector('.js-btn-top'),
     loader: document.querySelector('.loader'),
 
     langMenuBtns: document.querySelectorAll('.js-lang-menu-btn'),
     
     htmlEl: document.querySelector('html'),
-
     anchors: document.querySelectorAll('a[href*="#"]'),
 
     colorModeToggle: document.querySelector('.js-color-theme-toggle'),
@@ -18,7 +21,7 @@ export const refs = {
     colorModeMoon: document.querySelector('.js-color-theme-moon'),
 
     backdrop: document.querySelector('.js-backdrop'),
-    modalCareersBtnOpen: document.querySelector('.js-modal-careers-btn-open'),
+    modalCareersBtnsOpen: document.querySelectorAll('.js-modal-careers-btn-open'),
     modalCareersBtnClose: document.querySelector('.js-modal-careers-btn-close'),
     formCareers: document.querySelector('.js-form-careers'),
     formReq: document.querySelectorAll('._req'),

@@ -1,7 +1,23 @@
-.vacancies {}
+.vacancies {
+    // background-image: url('../images/main-page/hero.jpg');
+      // background-size: cover;
+      // background-position: center;
+      background-color: tomato;
+      padding-top: 30px;
+      padding-bottom: 1000px;
+    
+      @include mq(tablet) {
+        padding-bottom: 450px;
+      }
+    
+      @include mq(desktop) {
+        padding-bottom: 600px;
+        padding-top: 50px;
+      }
+}
 
 .vacancies__title {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   font-size: 28px;
   text-align: center;
@@ -36,7 +52,7 @@
   }
 }
 
-.vacancies__btn {
+.vacancies__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,10 +75,8 @@
   }
 }
 
-.vacancies__label-text {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 2;
+.vacancies__label {
+  color: var(--main-black);
 }
 
 .vacancies__icon {
@@ -77,6 +91,7 @@
 
   animation: bump 0.4s ease-in infinite alternate;
   transform: rotateZ(90deg);
+  
 
   &::after {
     content: '';
@@ -89,13 +104,17 @@
     border-top-color: var(--main-blue);
   }
 
+  .vacancies__btn:hover & {
+    transform: translate(-30%, -50%) rotateZ(0deg);
+  }
+
   @keyframes bump {
     0% {
-      transform: translate(0, -40%);
+      transform: translateX(10%) rotateZ(90deg);
     }
 
     100% {
-      transform: translate(0, -60%);
+      transform: translateX(-10%) rotateZ(90deg);
     }
   }
 
@@ -106,5 +125,75 @@
 
 .vacancies__details {
   margin-top: 50px;
-  display: none;
+  transition: all 500ms ease;
+
+  &--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.vacancies__details-wrapper {
+  padding: 15px;
+
+  background-color: white;
+
+  @include mq(desktop) {
+  padding: 20px 100px;
+  }
+}
+
+.vacancies__details-position {
+  margin-bottom: 30px;
+  
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.vacancies__details-label {
+  margin-bottom: 5px;
+  
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.vacancies__details-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.vacancies__details-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.vacancies__details-text {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+
+.vacancies__btn-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vacancies__details-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 20px 30px;
+
+  background-color: var(--form-accent-main);
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @include mq(tablet) {
+    padding: 20px 60px;
+  }
 }
