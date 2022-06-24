@@ -12,15 +12,33 @@ export const langData = {
         "vac-label-2": "Hatchery Technician",
         "vac-label-3": "Flupsy Technician",
         "vac-det-1-pos": "Aquaculture Engineer",
-        "vac-det-1-label": "position description",
-        "vac-det-1-text-1": "Study, research, develop & implement ideas for hatchery production modernisation as well as workflow optimisation.",
-        "vac-det-1-text-2": "Participating in optimising and increasing efficiency of other production stages involved within the shellfish lifecycle, such as pregrowing and oougrowing the shellfish to full size.",
-        "vac-det-1-text-3": "Being heavily involved from the project inception and design, all the way through to startup implementation and innovation of further production facilities after the hatchery phase, such as FLUPSYs, upwelling tanks, raceway, sand lagoon based nurseries.",
-        "vac-det-1-text-4": "Maintenance of various site systems like water supply / filtration systems, various electrical circuits and heating systems.",
-        "vac-det-1-text-5": "Provision of Technical assistance to hatchery workers in the form of resolving equipment malfunctions.",
-        "vac-det-1-text-6": "Personal innovative projects for creation of parts / systems from design phase to assembly.",
-        "vac-det-1-text-7": "Observation & analysis of test results, machine error messages, and information obtained from operators in order to diagnose equipment problems.",
-        "vac-det-1-text-8": "Assembly, installation and / or repair of wiring, electronic and electrical components, pipe systems and plumbing, machinery, and other aquaculture equipment.",
+        "vac-det-1-descr": "position description",
+        "vac-det-1-text": `
+            <li class= "vacancies__details-item">
+                Study, research, develop & implement ideas for hatchery production modernisation as well as workflow optimisation.
+            </li>
+            <li class="vacancies__details-item">
+                Participating in optimising and increasing efficiency of other production stages involved within the shellfish lifecycle, such as pregrowing and oougrowing the shellfish to full size.
+            </li>
+            <li class="vacancies__details-item">
+                Being heavily involved from the project inception and design, all the way through to startup implementation and innovation of further production facilities after the hatchery phase, such as FLUPSYs, upwelling tanks, raceway, sand lagoon based nurseries.
+            </li>
+            <li class="vacancies__details-item">
+                Maintenance of various site systems like water supply / filtration systems, various electrical circuits and heating systems.
+            </li>
+            <li class="vacancies__details-item">
+                Provision of Technical assistance to hatchery workers in the form of resolving equipment malfunctions.
+            </li>
+            <li class="vacancies__details-item">
+                Personal innovative projects for creation of parts / systems from design phase to assembly.
+            </li>
+            <li class="vacancies__details-item">
+                Observation & analysis of test results, machine error messages, and information obtained from operators in order to diagnose equipment problems.
+            </li>
+            <li class="vacancies__details-item">
+                Assembly, installation and / or repair of wiring, electronic and electrical components, pipe systems and plumbing, machinery, and other aquaculture equipment.
+            </li>
+        `,
         "vac-det-1-btn-apply": "Apply",
         "vac-det-1-btn-close": "Close",
 
@@ -68,15 +86,33 @@ export const langData = {
         "vac-label-2": "Tecnico Di Schiuditoio",
         "vac-label-3": "Tecnico Di Flupsy",
         "vac-det-1-pos": "Acquacoltura Ingegnere",
-        "vac-det-1-label": "descrizione della posizione",
-        "vac-det-1-text-1": "Studiare, ricercare, sviluppare e implementare idee per la modernizzazione della produzione in schiuditoio e l'ottimizzazione del flusso di lavoro.",
-        "vac-det-1-text-2": "Partecipare e aumentare l'efficienza di altre fasi di produzione coinvolte nel ciclo di vita dei molluschi, come il preingrasso e l'ingrasso a grandezza commerciale.",
-        "vac-det-1-text-3": "Essere pesantemente coinvolti dall'inizio nella progettazione , fino all'avvio, ed all'implementazione e all'innovazione di ulteriori impianti di produzione dopo la fase di schiuditoio, come FLUPSY, vasche di upwelling, raceways, vivai in ambiente naturale.",
-        "vac-det-1-text-4": "Manutenzione di vari sistemi del sito come approvvigionamento idrico / filtrazione impianti, circuiti elettrici vari e impianti di riscaldamento.",
-        "vac-det-1-text-5": "Fornitura di assistenza tecnica agli schiuditoi sotto forma di risoluzione dei mal funzionamenti delle apparecchiature.",
-        "vac-det-1-text-6": "Progetti innovativi personali per la creazione di parti/sistemi dalla fase di progettazione al montaggio.",
-        "vac-det-1-text-7": "Osservazione e analisi dei risultati dei test, macchina messaggi di errore e informazioni ottenute dagli operatori per la diagnosi di eventuali problemi alle apparecchiature.",
-        "vac-det-1-text-8": "Assemblaggio, installazione e / o riparazione di cablaggi, componenti elettronici ed elettrici, sistemi di tubazioni e impianti idraulici, macchinari e altre attrezzature per l'acquacoltura.",
+        "vac-det-1-descr": "descrizione della posizione",
+        "vac-det-1-text": `
+            <li class= "vacancies__details-item">
+                Studiare, ricercare, sviluppare e implementare idee per la modernizzazione della produzione in schiuditoio e l'ottimizzazione del flusso di lavoro.
+            </li>
+            <li class="vacancies__details-item">
+                Partecipare e aumentare l'efficienza di altre fasi di produzione coinvolte nel ciclo di vita dei molluschi, come il preingrasso e l'ingrasso a grandezza commerciale.
+            </li>
+            <li class="vacancies__details-item">
+                Essere pesantemente coinvolti dall'inizio nella progettazione , fino all'avvio, ed all'implementazione e all'innovazione di ulteriori impianti di produzione dopo la fase di schiuditoio, come FLUPSY, vasche di upwelling, raceways, vivai in ambiente naturale.
+            </li>
+            <li class="vacancies__details-item">
+                Manutenzione di vari sistemi del sito come approvvigionamento idrico / filtrazione impianti, circuiti elettrici vari e impianti di riscaldamento.
+            </li>
+            <li class="vacancies__details-item">
+                Fornitura di assistenza tecnica agli schiuditoi sotto forma di risoluzione dei mal funzionamenti delle apparecchiature.
+            </li>
+            <li class="vacancies__details-item">
+                Progetti innovativi personali per la creazione di parti/sistemi dalla fase di progettazione al montaggio.
+            </li>
+            <li class="vacancies__details-item">
+                Osservazione e analisi dei risultati dei test, macchina messaggi di errore e informazioni ottenute dagli operatori per la diagnosi di eventuali problemi alle apparecchiature.
+            </li>
+            <li class="vacancies__details-item">
+                Assemblaggio, installazione e / o riparazione di cablaggi, componenti elettronici ed elettrici, sistemi di tubazioni e impianti idraulici, macchinari e altre attrezzature per l'acquacoltura.
+            </li>
+        `,
         "vac-det-1-btn-apply": "Applicare",
         "vac-det-1-btn-close": "Vicino",
 

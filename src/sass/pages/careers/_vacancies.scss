@@ -2,7 +2,7 @@
     // background-image: url('../images/main-page/hero.jpg');
       // background-size: cover;
       // background-position: center;
-      background-color: tomato;
+      background: linear-gradient(4deg, #5462c3, #ba872c);
       padding-top: 30px;
       padding-bottom: 1000px;
     
@@ -165,15 +165,13 @@
 }
 
 .vacancies__details-item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
-
-.vacancies__details-text {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .vacancies__btn-box {
