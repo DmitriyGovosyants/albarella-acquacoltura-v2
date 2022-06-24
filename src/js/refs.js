@@ -4,9 +4,9 @@ export const refs = {
     closeMenuBtn: document.querySelector('.js-menu-mob-btn-close'),
     mobileMenuNav: document.querySelector('.js-menu-mob-nav'),
 
-    vacancy: document.querySelector('.js-vacancy'),
-    vacancyDescription: document.querySelector('.js-vacancy-description'),
-    vacancyCloseBtn: document.querySelector('.js-vacancy-close'),
+    vacancies: document.querySelectorAll('.js-vacancy'),
+    vacanciesDescription: document.querySelectorAll('.js-vacancy-description'),
+    vacanciesCloseBtn: document.querySelectorAll('.js-vacancy-close'),
     
     backToTopBtn: document.querySelector('.js-btn-top'),
     loader: document.querySelector('.loader'),

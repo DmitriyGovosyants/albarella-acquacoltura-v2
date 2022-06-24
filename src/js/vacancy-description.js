@@ -1,11 +1,28 @@
 import { refs } from "./refs";
-refs.vacancy.addEventListener('click', handleVacancyOpen);
-refs.vacancyCloseBtn.addEventListener('click', handleVacancyClose);
 
-function handleVacancyOpen() {
-  refs.vacancyDescription.classList.remove('vacancies__details--is-hidden');
+refs.vacancies.forEach(el => {
+  el.addEventListener('click', handleVacancyOpen);
+});
+
+refs.vacanciesCloseBtn.forEach(el => {
+  el.addEventListener('click', handleVacanciesClose);
+});
+
+function handleVacancyOpen(e) {
+  handleVacanciesClose();
+  const vacancyLink = e.currentTarget.id;
+
+  for (let i = 0; i < refs.vacancies.length; i += 1) {
+    let currentDescr = refs.vacanciesDescription[i];
+
+    if (currentDescr.id === vacancyLink) {
+      currentDescr.classList.remove('vacancies__details--is-hidden');
+    }
+  }
 }
 
-function handleVacancyClose() {
-  refs.vacancyDescription.classList.add('vacancies__details--is-hidden');
+function handleVacanciesClose() {
+  refs.vacanciesDescription.forEach(el => {
+    el.classList.add('vacancies__details--is-hidden')
+  });
 }
