@@ -87,6 +87,95 @@ export const langData = {
         "vac-det-1-btn-apply": "Apply",
         "vac-det-1-btn-close": "Close",
 
+        "vac-det-2-pos": "Hatchery Technician",
+        "vac-det-2-descr": "position description",
+        "vac-det-2-descr-text": `
+            <li class= "vacancies__details-item">
+                Phytoplankton culture.
+            </li>
+            <li class="vacancies__details-item">
+                Broodstock conditioning and spawning.
+            </li>
+            <li class="vacancies__details-item">
+                Larval culture, nursery production.
+            </li>
+            <li class="vacancies__details-item">
+                Equipment cleaning and maintenance.
+            </li>
+            <li class="vacancies__details-item">
+                Environmental monitoring and record keeping.
+            </li>
+        `,
+        "vac-det-2-req": "requirements",
+        "vac-det-2-req-text": `
+            <li class= "vacancies__details-item">
+                A degree in marine biology/ natural sciences/ aquaculture or prior experience in this sector.
+            </li>
+            <li class="vacancies__details-item">
+                Willingness to learn all stages of the breeding cycle and the ability to work in a team.
+            </li>
+            <li class="vacancies__details-item">
+                Must be able to work a flexible schedule depending on production.
+            </li>
+            <li class="vacancies__details-item">
+                Working knowledge of Italian and a good knowledge of English.
+            </li>
+        `,
+        "vac-det-2-btn-apply": "Apply",
+        "vac-det-2-btn-close": "Close",
+
+        "vac-det-3-pos": "Flupsy Technician",
+        "vac-det-3-descr": "position description",
+        "vac-det-3-descr-text": `
+            <li class= "vacancies__details-item">
+                Washing and rearing of shellfish seeds
+            </li>
+            <li class="vacancies__details-item">
+                Collection and analysis of samples
+            </li>
+            <li class="vacancies__details-item">
+                Classification and packaging of seeds.
+            </li>
+            <li class="vacancies__details-item">
+                Maintenance and repairs flupsy.
+            </li>
+            <li class="vacancies__details-item">
+                Cleaning and maintenance of equipment.
+            </li>
+            <li class="vacancies__details-item">
+                Environmental monitoring and registration of records.
+            </li>
+        `,
+        "vac-det-3-req": "requirements",
+        "vac-det-3-req-text": `
+            <li class= "vacancies__details-item">
+                Ability to learn all stages of the breeding cycle and theability to work in a team.
+            </li>
+            <li class="vacancies__details-item">
+                Capability in hands-on work and good knowledge of tool use.
+            </li>
+            <li class="vacancies__details-item">
+                Willingness to work both outdoors and indoors depending on production requirements.
+            </li>
+            <li class="vacancies__details-item">
+                Good visual & spatial awareness.
+            </li>
+            <li class= "vacancies__details-item">
+                Safety Awareness.
+            </li>
+            <li class="vacancies__details-item">
+                Beingaware of conditions that affect employee safety.
+            </li>
+            <li class="vacancies__details-item">
+                Must beable to work a flexible schedule depending on production.
+            </li>
+            <li class="vacancies__details-item">
+                Good knowledge of English.
+            </li>
+        `,
+        "vac-det-3-btn-apply": "Apply",
+        "vac-det-3-btn-close": "Close",
+
         "footer-address-text": "Our Location",
         "footer-address-link": "45010 Rosolina, Province of Rovigo, Italy",
         "footer-socials": "Join Us",
@@ -208,6 +297,95 @@ export const langData = {
         `,
         "vac-det-1-btn-apply": "Applicare",
         "vac-det-1-btn-close": "Vicino",
+
+        "vac-det-2-pos": "Tecnico Di Schiuditoio",
+        "vac-det-2-descr": "descrizione della posizione",
+        "vac-det-2-descr-text": `
+            <li class= "vacancies__details-item">
+                Coltura di fitoplancton.
+            </li>
+            <li class="vacancies__details-item">
+                Condizionamento dei riproduttori e deposizione delle uova.
+            </li>
+            <li class="vacancies__details-item">
+                Coltura larvale, produzione per la nursery.
+            </li>
+            <li class="vacancies__details-item">
+                Pulizia e manutenzione delle attrezzature.
+            </li>
+            <li class="vacancies__details-item">
+                Monitoraggio ambientale e tenuta dei registri.
+            </li>
+        `,
+        "vac-det-2-req": "requisiti",
+        "vac-det-2-req-text": `
+            <li class= "vacancies__details-item">
+                Laurea in biologia marina/scienze naturali/acquacoltura o precedente esperienza in questo settore.
+            </li>
+            <li class="vacancies__details-item">
+                Disponibilità ad apprendere tutte le fasi del ciclo riproduttivo e capacità di lavorare in gruppo.
+            </li>
+            <li class="vacancies__details-item">
+                Deve essere in grado di lavorare con orari flessibili a seconda della produzione.
+            </li>
+            <li class="vacancies__details-item">
+                Buona conoscenza della lingua inglese.
+            </li>
+        `,
+        "vac-det-2-btn-apply": "Applicare",
+        "vac-det-2-btn-close": "Vicino",
+
+        "vac-det-3-pos": "Tecnico Di Flupsy",
+        "vac-det-3-descr": "descrizione della posizione",
+        "vac-det-3-descr-text": `
+            <li class= "vacancies__details-item">
+                Lavaggio e allevamento dei semi di molluschi.
+            </li>
+            <li class="vacancies__details-item">
+                Raccolta e analisi dei campioni.
+            </li>
+            <li class="vacancies__details-item">
+                Classificazione e confezionamento dei semi.
+            </li>
+            <li class="vacancies__details-item">
+                Manutenzione e riparazioni flupsy.
+            </li>
+            <li class="vacancies__details-item">
+                Pulizia e manutenzione delle attrezzature.
+            </li>
+            <li class="vacancies__details-item">
+                Monitoraggio ambientale e compilazione registri.
+            </li>
+        `,
+        "vac-det-3-req": "requisiti",
+        "vac-det-3-req-text": `
+            <li class= "vacancies__details-item">
+                Capacità di apprendere tutte le fasi del ciclo di allevamento e capacità di lavorare in gruppo.
+            </li>
+            <li class="vacancies__details-item">
+                Capacità nel lavoro pratico e buona conoscenza dell'uso degli strumenti.
+            </li>
+            <li class="vacancies__details-item">
+                Disponibilità a lavorare sia all'aperto che al chiuso a seconda delle esigenze di produzione.
+            </li>
+            <li class="vacancies__details-item">
+                Buona consapevolezza spaziale.
+            </li>
+            <li class= "vacancies__details-item">
+                Consapevolezza della sicurezza.
+            </li>
+            <li class="vacancies__details-item">
+                Essere consapevoli delle condizioni che influiscono sulla sicurezza dei dipendenti.
+            </li>
+            <li class="vacancies__details-item">
+                Essere in grado di lavorare con orari flessibili a seconda della produzione.
+            </li>
+            <li class="vacancies__details-item">
+                Buona conoscenza della lingua inglese.
+            </li>
+        `,
+        "vac-det-3-btn-apply": "Applicare",
+        "vac-det-3-btn-close": "Vicino",
 
         "footer-address-text": "La nostra Posizione",
         "footer-address-link": "45010 Rosolina, Provincia di Rovigo, Italia",
