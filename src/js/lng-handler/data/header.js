@@ -4,7 +4,7 @@ export const en_header = {
   "nav-3": "facilities",
   "nav-4": "about",
   "nav-5": "careers",
-  "nav-6": "contacts"
+  "nav-6": "contacts",
 }
 
 export const it_header = {
