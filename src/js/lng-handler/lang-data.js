@@ -187,7 +187,7 @@ export const langData = {
 
         "form-title": "Apply for available position",
         "form-position": "Job title",
-        "form-position-1": "Aquaculture Engineer/Mechanic",
+        "form-position-1": "Aquaculture Engineer",
         "form-position-2": "Hatchery Technician",
         "form-position-3": "Flupsy Technician",
         "form-first-name": "First name *",
@@ -398,9 +398,9 @@ export const langData = {
 
         "form-title": "Candidati per una posizione",
         "form-position": "Titolo di lavoro",
-        "form-position-1": "Ingegnere/meccanico di acquacoltura",
-        "form-position-2": "Incubatoio Tecnico",
-        "form-position-3": "Flupsy Tecnico",
+        "form-position-1": "Acquacoltura Ingegnere",
+        "form-position-2": "Tecnico Di Schiuditoio",
+        "form-position-3": "Tecnico Di Flupsy",
         "form-first-name": "Nome *",
         "form-last-name": "Cognome *",
         "form-email": "E-mail *",

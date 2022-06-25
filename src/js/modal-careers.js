@@ -6,7 +6,8 @@ for (let i = 0; i < refs.modalCareersBtnsOpen.length; i += 1) {
 
 refs.modalCareersBtnClose.addEventListener('click', handleModalClose);
 
-function handleModalOpen() {
+function handleModalOpen(e) {
+  console.log(e.currentTarget)
   document.body.classList.add('modal-open');
   refs.backdrop.classList.remove('backdrop--hidden');
   document.addEventListener('keydown', handleModalCloseByEsc);

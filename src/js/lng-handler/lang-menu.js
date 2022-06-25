@@ -1,5 +1,5 @@
 import { langData } from "./lang-data";
-import { refs } from "./refs";
+import { refs } from "../refs";
 
 refs.langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch));
 

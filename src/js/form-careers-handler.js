@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { langData } from "./lang-data";
+import { langData } from "./lng-handler/lang-data";
 import { refs } from "./refs";
 
 Notify.init({
