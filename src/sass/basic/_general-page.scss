@@ -26,10 +26,8 @@
 }
 
 .hero {
-  background-size: cover;
-  background-position: top;
   padding-top: 200px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
 
   @include mq(tablet) {
     padding-top: 250px;
@@ -37,7 +35,7 @@
 
   @include mq(desktop) {
     padding-top: 300px;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
   }
 }
 
@@ -46,6 +44,7 @@
   font-size: 36px;
   color: var(--main-white);
   text-shadow: var(--main-black) 3px 3px;
+  text-align: center;
 
   @include mq(tablet) {
     font-size: 46px;
