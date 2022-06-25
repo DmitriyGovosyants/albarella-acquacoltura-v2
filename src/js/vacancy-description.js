@@ -15,7 +15,7 @@ function handleVacancyOpen(e) {
   for (let i = 0; i < refs.vacancies.length; i += 1) {
     let currentDescr = refs.vacanciesDescription[i];
 
-    if (currentDescr.id === vacancyLink) {
+    if (currentDescr.dataset.id === vacancyLink) {
       currentDescr.classList.remove('vacancies__details--is-hidden');
     }
   }
