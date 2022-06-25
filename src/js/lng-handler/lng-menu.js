@@ -1,4 +1,4 @@
-import { langData } from "./lang-data";
+import { lngData } from "./lng-data";
 import { refs } from "../refs";
 
 refs.langMenuBtns.forEach(btn => btn.addEventListener('click', onLangSwitch));
@@ -19,11 +19,11 @@ function changeLanguage() {
 
     refs.htmlEl.lang = lang;
 
-    for (let key in langData.en) {
+    for (let key in lngData.en) {
         let elem = document.querySelector('.lng-' + key);
 
         if (elem) {
-            elem.innerHTML = langData[lang][key];
+            elem.innerHTML = lngData[lang][key];
         }
     }
 }

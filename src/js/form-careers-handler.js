@@ -1,5 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-import { langData } from "./lng-handler/lang-data";
+import { lngData } from "./lng-handler/lng-data";
 import { refs } from "./refs";
 
 Notify.init({
@@ -38,7 +38,7 @@ async function handleFormSend(e) {
   if (error !== 0) {
     refs.formSubmitBtn.removeAttribute('disabled');
     refs.loader.classList.remove('loader--is-active');
-    Notify.failure(langData[currentLang]['form-valid-fields-error']);
+    Notify.failure(lngData[currentLang]['form-valid-fields-error']);
   }
 
   if (error === 0) {
@@ -57,18 +57,18 @@ async function handleFormSend(e) {
         console.log(result.status);
 
         if (result.status === 'Data sent failure') {
-          return Notify.failure(langData[currentLang]['form-error-send']);
+          return Notify.failure(lngData[currentLang]['form-error-send']);
         }
 
-        Notify.success(langData[currentLang]['form-successfully-send']);
-        refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+        Notify.success(lngData[currentLang]['form-successfully-send']);
+        refs.formResumeBtn.innerHTML = lngData[currentLang]['form-resume-upload-btn'];
         e.target.reset();
       }
     } catch (error) {
       console.log(error);
       refs.formSubmitBtn.removeAttribute('disabled');
       refs.loader.classList.remove('loader--is-active');
-      Notify.failure(langData[currentLang]['form-error-send']);
+      Notify.failure(lngData[currentLang]['form-error-send']);
     }
   }
 }
@@ -144,8 +144,8 @@ function uploadFile(file) {
 
 function uploadFileError(currentLang, error) {
   refs.formResume.value = '';
-  Notify.failure(langData[currentLang][error]);
-  refs.formResumeBtn.innerHTML = langData[currentLang]['form-resume-upload-btn'];
+  Notify.failure(lngData[currentLang][error]);
+  refs.formResumeBtn.innerHTML = lngData[currentLang]['form-resume-upload-btn'];
 }
 
 function uploadFileTrue() {
@@ -153,5 +153,5 @@ function uploadFileTrue() {
 }
 
 function uploadFileFalse(currentLang) {
-  Notify.failure(langData[currentLang]['form-valid-resume-load-error']);
+  Notify.failure(lngData[currentLang]['form-valid-resume-load-error']);
 }
