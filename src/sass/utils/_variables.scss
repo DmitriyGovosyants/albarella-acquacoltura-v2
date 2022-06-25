@@ -1,15 +1,14 @@
-// #02302d (основной зелёный)
-// #081617 ( черный)
-// #23301d (тёмно-зелёный)
-// #74846c (серый)
-// #b9aa71 (светлый беж)
-
 :root {
     --animation-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     --header-fix-mobile: 60px;
     --header-fix-desktop: 80px;
+    --hero-height-mob-video-parallax: 50vh;
+    --hero-height-tab-video-parallax: 80vh;
+    --hero-height-des-video-parallax: 100vh;
+    --hero-height-img-parallax: 50vh;
+    --hero-height-main-img-parallax: 100vh;
 
     --main-black: #081617;
     --main-white: rgb(255, 255, 255);
@@ -20,12 +19,12 @@
 
     --bgc-main: #080f2b;
     --bgc-second: #23301d;
-    --bgc-third: rgba(116, 132, 108, 0.3);
+    --bgc-third: rgb(160, 179, 150);
     --bgc-fourth: rgba(2, 48, 45, 0.5);
 
     --accent-color: rgb(235, 235, 235);
     --accent-color-transparent: rgb(200, 214, 194);
-    --footer-line: #ca9b4a81;
+    --think-line: #ca9b4a81;
 
     --form-bgc-color-main: rgb(124, 92, 92);
     --form-text-color-main: #fff;
@@ -49,5 +48,5 @@
     --main-blue: rgb(28, 28, 173);
     --text-logo: #dfb05f;
 
-    --footer-line: #ffffff4d;
+    --think-line: #ffffff4d;
 }

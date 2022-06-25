@@ -25,23 +25,3 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-.footer-fixed-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: calc(100% + 1px);
-
-    padding-top: 60px;
-    
-    @include mq(tablet) {
-        padding-top: 80px;
-    }
-}
-
-.page-content {
-    flex-grow: 1;
-
-    &--gradient {
-        background: linear-gradient(4deg, #5462c3, #ba872c);
-    }
-}

@@ -19,10 +19,12 @@
   <body>
     <include src="./partials/header-part.html"></include>
     <div class="footer-fixed-wrapper">
-      <main class="page-content page-content--gradient">
+      <main class="page-content">
         <include src="./partials/careers/hero.html"></include>
-        <include src="./partials/careers/about.html"></include>
-        <include src="./partials/careers/vacancies.html"></include>
+        <div class="page-content__parallax page-content__parallax--gradient">
+          <include src="./partials/careers/about.html"></include>
+          <include src="./partials/careers/vacancies.html"></include>
+        </div>
         <include src="./partials/modal-careers.html"></include>
       </main>
       <include src="./partials/footer-part.html"></include>

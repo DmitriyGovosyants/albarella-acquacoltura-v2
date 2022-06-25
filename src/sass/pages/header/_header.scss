@@ -7,7 +7,7 @@
     width: 100%;
     height: var(--header-fix-mobile);
     background-color: var(--bgc-main);
-    border-bottom: 1px solid var(--bgc-third);
+    border-bottom: 1px solid var(--think-line);
 
     @include mq(tablet) {
         height: var(--header-fix-desktop);

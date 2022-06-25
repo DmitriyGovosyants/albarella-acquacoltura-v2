@@ -1,0 +1,162 @@
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq(mobile) {
+    width: 440px;
+  }
+
+  @include mq(tablet) {
+    width: 700px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @include mq(desktop) {
+    width: 1110px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-fixed-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% + 1px);
+
+  padding-top: var(--header-fix-mobile);
+
+  @include mq(tablet) {
+    padding-top: var(--header-fix-desktop);
+  }
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+.page-content__parallax {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: var(--bgc-third);
+
+  &--gradient {
+    background: linear-gradient(4deg, #5462c3, #ba872c);
+  }
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(
+    var(--hero-height-img-parallax)
+    - var(--header-fix-mobile)
+  );
+
+  @include mq(tablet) {
+    min-height: calc(
+      var(--hero-height-img-parallax)
+      - var(--header-fix-desktop)
+    );
+  }
+
+  &--main {
+    min-height: calc(
+      var(--hero-height-main-img-parallax) 
+      - var(--header-fix-mobile)
+    );
+    
+    @include mq(tablet) {
+      min-height: calc(
+        var(--hero-height-main-img-parallax) 
+        - var(--header-fix-desktop)
+      );
+    }
+  }
+
+  &--video {
+    min-height: calc(
+      var(--hero-height-mob-video-parallax) 
+      - var(--header-fix-mobile)
+    );
+    
+    @include mq(tablet) {
+      min-height: calc(
+        var(--hero-height-tab-video-parallax) 
+        - var(--header-fix-desktop)
+      );
+    }
+    
+    @include mq(desktop) {
+      min-height: calc(
+        var(--hero-height-des-video-parallax) 
+        - var(--header-fix-desktop)
+      );
+    }
+  }
+}
+
+.hero__overlay {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 auto;
+  padding: 30px 15px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.hero__title {
+  font-family: Gloria Hallelujah, sans-serif;
+  font-size: 44px;
+  color: var(--main-white);
+  text-shadow: var(--main-black) 3px 3px;
+  text-align: center;
+
+  @include mq(tablet) {
+    font-size: 54px;
+  }
+
+  @include mq(desktop) {
+    font-size: 60px;
+  }
+}
+
+.hero__content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--hero-height-img-parallax);
+  object-fit: cover;
+
+  &--main {
+    height: var(--hero-height-main-img-parallax);
+  }
+
+  &--video {
+    height: var(--hero-height-mob-video-parallax);
+  
+    @include mq(tablet) {
+      height: var(--hero-height-tab-video-parallax);
+    }
+  
+    @include mq(desktop) {
+      height: var(--hero-height-des-video-parallax);
+    }
+  }
+}
