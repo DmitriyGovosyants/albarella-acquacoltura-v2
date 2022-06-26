@@ -39,10 +39,6 @@
   height: calc(100% + 1px);
 
   padding-top: var(--header-fix);
-
-  @include mq(tablet) {
-    padding-top: var(--header-fix);
-  }
 }
 
 .page-content {

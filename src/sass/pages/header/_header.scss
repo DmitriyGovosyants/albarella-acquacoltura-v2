@@ -6,12 +6,7 @@
 
     width: 100%;
     height: var(--header-fix);
-    background-color: var(--bgc-main);
-    border-bottom: 1px solid var(--think-line);
-
-    @include mq(tablet) {
-        height: var(--header-fix);
-    }
+    background: linear-gradient(1deg, var(--bgc-main) 30%, var(--main-blue));
 }
 
 .header__container {

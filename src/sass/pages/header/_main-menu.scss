@@ -9,7 +9,7 @@
 
         height: 100%;
 
-        background-color: var(--bgc-main);
+        background: linear-gradient(1deg, var(--bgc-main) 95%, var(--main-blue));
         border-bottom-left-radius: 50px;
         box-shadow: -3px 3px 10px var(--mob-menu-outer-shadow);
 
