@@ -10,7 +10,7 @@ refs.vacanciesCloseBtn.forEach(el => {
 
 function handleVacancyOpen(e) {
   handleVacanciesClose();
-  const vacancyLink = e.currentTarget.id;
+  const vacancyLink = e.currentTarget.dataset.id;
 
   for (let i = 0; i < refs.vacancies.length; i += 1) {
     let currentDescr = refs.vacanciesDescription[i];
