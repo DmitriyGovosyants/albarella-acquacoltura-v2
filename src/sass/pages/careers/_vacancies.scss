@@ -209,15 +209,15 @@
 
   background-color: var(--form-accent-main);
 
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-
   @include mq(tablet) {
     padding: 20px 60px;
   }
 
   @include mq(notDesktop) {
-    cursor: auto;
+    cursor: none;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px;
   }
 }
