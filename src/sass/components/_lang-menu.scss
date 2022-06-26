@@ -42,8 +42,7 @@
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
 
     &:hover {
-        color: var(--bgc-main);
-        background-color: var(--accent-color);
+        color: var(--accent-color);
     }
 
     @include mq(desktop) {
