@@ -2,13 +2,18 @@
     --animation-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    --header-fix-mobile: 60px;
-    --header-fix-desktop: 80px;
-    --hero-height-mob-video-parallax: 50vh;
-    --hero-height-tab-video-parallax: 80vh;
-    --hero-height-des-video-parallax: 100vh;
-    --hero-height-img-parallax: 50vh;
-    --hero-height-main-img-parallax: 100vh;
+    --header-fix: 60px;
+    @include mq(tablet) { --header-fix: 80px; }
+
+    --hero-height-img-parallax: calc(50vh - var(--header-fix));
+
+    --hero-height-main-img-parallax: calc(50vh - var(--header-fix));
+    @include mq(tablet) { --hero-height-main-img-parallax: calc(80vh - var(--header-fix)); }
+    @include mq(desktop) { --hero-height-main-img-parallax: calc(100vh - var(--header-fix)); }
+
+    --hero-height-video-parallax: calc(50vh - var(--header-fix));
+    @include mq(tablet) { --hero-height-video-parallax: calc(80vh - var(--header-fix)); }
+    @include mq(desktop) { --hero-height-video-parallax: calc(100vh - var(--header-fix)); }
 
     --main-black: #081617;
     --main-white: rgb(255, 255, 255);

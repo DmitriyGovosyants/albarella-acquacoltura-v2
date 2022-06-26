@@ -33,19 +33,21 @@
 }
 
 .footer-fixed-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: calc(100% + 1px);
 
-  padding-top: var(--header-fix-mobile);
+  padding-top: var(--header-fix);
 
   @include mq(tablet) {
-    padding-top: var(--header-fix-desktop);
+    padding-top: var(--header-fix);
   }
 }
 
 .page-content {
   flex-grow: 1;
+  position: relative;
 }
 
 .page-content__parallax {
@@ -65,51 +67,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: calc(
-    var(--hero-height-img-parallax)
-    - var(--header-fix-mobile)
-  );
-
-  @include mq(tablet) {
-    min-height: calc(
-      var(--hero-height-img-parallax)
-      - var(--header-fix-desktop)
-    );
-  }
+  min-height: var(--hero-height-img-parallax);
 
   &--main {
-    min-height: calc(
-      var(--hero-height-main-img-parallax) 
-      - var(--header-fix-mobile)
-    );
-    
-    @include mq(tablet) {
-      min-height: calc(
-        var(--hero-height-main-img-parallax) 
-        - var(--header-fix-desktop)
-      );
-    }
+    min-height: var(--hero-height-main-img-parallax);
   }
 
   &--video {
-    min-height: calc(
-      var(--hero-height-mob-video-parallax) 
-      - var(--header-fix-mobile)
-    );
-    
-    @include mq(tablet) {
-      min-height: calc(
-        var(--hero-height-tab-video-parallax) 
-        - var(--header-fix-desktop)
-      );
-    }
-    
-    @include mq(desktop) {
-      min-height: calc(
-        var(--hero-height-des-video-parallax) 
-        - var(--header-fix-desktop)
-      );
-    }
+    min-height: var(--hero-height-video-parallax);
   }
 }
 
@@ -143,57 +108,19 @@
   }
 }
 
-.hero__content {
+.hero__background {
   position: fixed;
-  top: var(--header-fix-mobile);
+  top: var(--header-fix);
   left: 0;
   width: 100%;
-  height: calc(
-    var(--hero-height-img-parallax)
-    - var(--header-fix-mobile)
-  );
+  height: var(--hero-height-img-parallax);
   object-fit: cover;
 
-  @include mq(tablet) {
-    top: var(--header-fix-desktop);
-    height: calc(
-      var(--hero-height-img-parallax)
-      - var(--header-fix-desktop)
-    );
-  }
-
   &--main {
-    height: calc(
-      var(--hero-height-main-img-parallax)
-      - var(--header-fix-mobile)
-    );
-
-    @include mq(tablet) {
-      height: calc(
-        var(--hero-height-main-img-parallax)
-        - var(--header-fix-desktop)
-      );
-    }
+    height: var(--hero-height-main-img-parallax);
   }
 
   &--video {
-    height: calc(
-      var(--hero-height-mob-video-parallax)
-      - var(--header-fix-mobile)
-    );
-  
-    @include mq(tablet) {
-      height: calc(
-        var(--hero-height-tab-video-parallax)
-        - var(--header-fix-desktop)
-      );
-    }
-  
-    @include mq(desktop) {
-      height: calc(
-        var(--hero-height-des-video-parallax)
-        - var(--header-fix-desktop)
-      );
-    }
+    height: var(--hero-height-video-parallax);
   }
 }
