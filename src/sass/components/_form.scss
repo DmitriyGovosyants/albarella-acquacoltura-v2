@@ -7,7 +7,7 @@
 
   color: var(--form-text-color-main);
   background-color: var(--form-bgc-color-main);
-  box-shadow: 10px 10px 100px var(--main-white), -10px -10px 100px var(--main-white);
+  box-shadow: 5px 5px 30px var(--main-white), -5px -5px 30px var(--main-white);
   border-radius: 30px;
 
   transform: scale(1);
@@ -72,30 +72,9 @@
 
 .form__body {
   @include mq(desktop) {
-    display: grid;
-    grid-template-columns: 330px 20px 330px;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "title title title"
-      "fname none lname"
-      "email none phone"
-      "select none file"
-      "message message message"
-      "agreement agreement agreement"
-      "button button button";
-
-    & .item {
-      &-a {grid-area: title;}
-      &-b {grid-area: select;}
-      &-c {grid-area: fname;}
-      &-d {grid-area: lname;}
-      &-e {grid-area: email;}
-      &-f {grid-area: phone;}
-      &-g {grid-area: message;}
-      &-h {grid-area: file; justify-self: center;}
-      &-i {grid-area: agreement;}
-      &-j {grid-area: button;}
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -104,10 +83,28 @@
 
   font-size: 30px;
   text-align: center;
+
+  @include mq(desktop) {
+    width: 100%;
+  }
 }
 
 .form__item {
   margin-bottom: 20px;
+
+  @include mq(desktop) {
+    flex-basis: calc((100% - 20px) / 2);
+    
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+      margin-right: 20px;
+    }
+
+    &--full-width {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .form__label {
@@ -134,10 +131,10 @@
   
   &._error {
     box-shadow:
-        -2px 2px 15px var(--form-error-shadow-color),
-        2px -2px 15px var(--form-error-shadow-color),
-        2px 2px 15px var(--form-error-shadow-color),
-        -2px -2px 15px var(--form-error-shadow-color);
+      -2px 2px 15px var(--form-error-shadow-color),
+      2px -2px 15px var(--form-error-shadow-color),
+      2px 2px 15px var(--form-error-shadow-color),
+      -2px -2px 15px var(--form-error-shadow-color);
   }
 }
 
@@ -163,11 +160,17 @@ textarea.form__input {
 .file {
   display: flex;
   align-items: center;
+  
+  @include mq(desktop) {
+    justify-content: center;
+  }
 }
 
 .file__item {
   position: relative;
   min-width: 100px;
+  border-radius: 30px;
+  border: 1px solid var(--main-white);
 }
 
 .file__input {
