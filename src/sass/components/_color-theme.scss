@@ -67,8 +67,8 @@
         linear-gradient(-45deg, var(--grad)),
         linear-gradient(90deg, var(--grad));
     /* */
-    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--s)), #fff calc(100% - var(--s)));
-    mask: radial-gradient(farthest-side, transparent calc(100% - var(--s)), #fff calc(100% - var(--s)));
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--s)), var(--box-shadow) calc(100% - var(--s)));
+    mask: radial-gradient(farthest-side, transparent calc(100% - var(--s)), var(--box-shadow) calc(100% - var(--s)));
 }
 
 .sun.visible {

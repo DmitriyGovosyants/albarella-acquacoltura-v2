@@ -9,7 +9,7 @@
   height: 40px;
 
   border-radius: 50%;
-  border-top: 4px solid var(--main-white);
+  border-top: 4px solid var(--loader-color-first);
   border-right: 4px solid transparent;
   animation: rotation 1000ms linear infinite;
 
@@ -34,7 +34,7 @@
     }
 
     border-radius: 50%;
-    border-left: 4px solid var(--text-main);
+    border-left: 4px solid var(--loader-color-second);
     border-bottom: 4px solid transparent;
     animation: rotation 500ms linear infinite reverse;
   }

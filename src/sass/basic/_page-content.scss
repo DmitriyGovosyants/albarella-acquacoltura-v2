@@ -91,8 +91,8 @@
 .hero__title {
   font-family: Gloria Hallelujah, sans-serif;
   font-size: 44px;
-  color: var(--main-white);
-  text-shadow: var(--main-black) 3px 3px;
+  color: var(--text-third);
+  text-shadow: var(--text-shadow) 3px 3px;
   text-align: center;
 
   @include mq(tablet) {

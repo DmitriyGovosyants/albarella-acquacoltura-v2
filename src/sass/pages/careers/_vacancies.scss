@@ -18,7 +18,7 @@
 
   font-size: 28px;
   text-align: center;
-  color: var(--main-white);
+  color: var(--text-third);
 
   @include mq(desktop) {
     font-size: 36px;
@@ -37,7 +37,7 @@
 }
 
 .vacancies__item {
-  color: var(--main-black);
+  color: var(--text-second);
   background-color: var(--accent-color);
 
   @include mq(notDesktop) {
@@ -81,7 +81,7 @@
 }
 
 .vacancies__label {
-  color: var(--main-black);
+  color: var(--text-second);
 }
 
 .vacancies__icon {
@@ -92,7 +92,7 @@
   height: 15px;
   margin-left: 25px;
 
-  background: var(--main-blue);
+  background: var(--arrow-color);
 
   animation: bump 0.4s ease-in infinite alternate;
   transform: rotateZ(90deg);
@@ -110,7 +110,7 @@
     top: 100%;
     
     border: 15px solid transparent;
-    border-top-color: var(--main-blue);
+    border-top-color: var(--arrow-color);
   }
 
   @keyframes bump {

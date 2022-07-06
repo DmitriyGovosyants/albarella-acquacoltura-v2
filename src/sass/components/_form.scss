@@ -7,7 +7,7 @@
 
   color: var(--form-text-color-main);
   background-color: var(--form-bgc-color-main);
-  box-shadow: 5px 5px 30px var(--main-white), -5px -5px 30px var(--main-white);
+  box-shadow: 5px 5px 30px var(--box-shadow), -5px -5px 30px var(--box-shadow);
   border-radius: 30px;
 
   transform: scale(1);
@@ -174,7 +174,7 @@ textarea.form__input {
   position: relative;
   min-width: 100px;
   border-radius: 30px;
-  border: 1px solid var(--main-white);
+  border: 1px solid var(--think-line);
 }
 
 .file__input {

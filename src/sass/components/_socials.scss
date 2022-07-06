@@ -22,9 +22,9 @@
     width: 100%;
     height: 100%;
 
-    color: var(--accent-color);
+    color: var(--text-second);
 
-    background-color: var(--main-blue);
+    background-color: var(--accent-color);
     border: none;
     border-radius: 20px 10px 20px 10px;
 
@@ -33,9 +33,7 @@
 
     &:hover,
     &:focus {
-        color: var(--main-black);
-
-        background-color: var(--accent-color);
+        background-color: var(--bgc-second);
     }
 }
 

@@ -1,7 +1,7 @@
 export const en_other = {
-  "btn-top": "to top",
+  "btn-top": "top",
 }
 
 export const it_other = {
-  "btn-top": "in alto",
+  "btn-top": "alto",
 }

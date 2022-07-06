@@ -1,3 +1,5 @@
+// #02302d (основной зелёный) #081617 (черный) #23301d (тёмно-зелёный) #74846c (серый) #b9aa71 (светлый беж)
+
 :root {
     --animation-duration: 250ms;
     --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14,23 +16,29 @@
     --hero-height-video-parallax: calc(50vh - var(--header-fix));
     @include mq(tablet) { --hero-height-video-parallax: calc(80vh - var(--header-fix)); }
     @include mq(desktop) { --hero-height-video-parallax: calc(100vh - var(--header-fix)); }
-        // #104ebc
-    --main-black: #081617;
-    --main-white: rgb(255, 255, 255);
-    --main-blue: rgb(135, 135, 212);
     
     --text-main: #ca9b4a;
-    --text-logo: #ca9b4a;
-    --text-nav-hover: #081617;
+    --text-second: #081617;
+    --text-third: white;
 
-    --bgc-main: #080f2b;
-    --bgc-second: #23301d;
+    --text-shadow: #081617;
+    --text-logo: #ca9b4a;
+
+    // --bgc-main: #080f2b;
+    --bgc-main: #02302d;
+    --bgc-linear: #0f5e58;
+    --bgc-second: #b9aa71;
     --bgc-third: rgb(209, 223, 201);
     --bgc-fourth: rgba(2, 48, 45, 0.5);
 
     --accent-color: rgb(235, 235, 235);
     --accent-color-transparent: rgb(200, 214, 194);
+    
     --think-line: #ca9b4a81;
+    --loader-color-first: white;
+    --loader-color-second: #ca9b4a;
+    --arrow-color: #b9aa71;
+    --box-shadow: white;
 
     --form-bgc-color-main: rgb(124, 92, 92);
     --form-text-color-main: #fff;
@@ -48,11 +56,5 @@
 }
 
 .color-theme-ligth {
-    --text-main: rgb(255, 245, 245);
-    --bgc-main: #0088cc;
-    --accent-color: rgb(232, 233, 240);
-    --main-blue: rgb(28, 28, 173);
-    --text-logo: #dfb05f;
-    --text-nav-hover: rgb(240, 214, 219);
-    --think-line: #ffffff4d;
+    // --social-bgc: rgb(135, 135, 212);
 }

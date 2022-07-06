@@ -12,10 +12,11 @@
     padding-bottom: 7px;
     padding-left: 12px;
 
-    font-size: 14px;
-    color: var(--main-black);
+    font-family: Gloria Hallelujah, sans-serif;
+    font-size: 16px;
+    color: var(--text-second);
     
-    background-color: var(--accent-color-transparent);
+    background-color: var(--bgc-second);
     border-top-left-radius: 80%;
     transition: background-color var(--animation-duration) var(--animation-timing-function), color var(--animation-duration) var(--animation-timing-function);
     outline: none;
@@ -24,13 +25,14 @@
         padding-top: 12px;
         padding-right: 12px;
         padding-bottom: 12px;
-        padding-left: 20px;
+        padding-left: 25px;
+        font-size: 18px;
     }
 
     @include mq(desktop) {
         &:hover {
             color: var(--accent-color);
-            background-color: var(--main-blue);
+            background-color: var(--bgc-main);
         }
     }
 }
