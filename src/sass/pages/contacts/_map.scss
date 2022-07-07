@@ -37,7 +37,7 @@
   }
 
   &::after {
-    content: "🢀";
+    content: "\1F880";
     margin-left: calc(5 * var(--spacing));
     animation: arrow-right 1000ms var(--animation-timing-function) infinite;
 
@@ -57,7 +57,7 @@
   }
 
   &::before {
-    content: "🢂";
+    content: "\1F882";
     margin-right: calc(5 * var(--spacing));
     animation: arrow-left 1000ms var(--animation-timing-function) infinite;
 
@@ -92,7 +92,7 @@
 
   @include mq(desktop) {
     width: 80%;
-    height: 600px;
+    height: 400px;
   }
 
   &--is-visible {
