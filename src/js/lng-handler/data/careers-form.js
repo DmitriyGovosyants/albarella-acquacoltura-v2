@@ -13,7 +13,7 @@ export const en_careers_form = {
   "form-resume-upload-btn": "&#10149; Choose file &lt; 5 MB, .pdf",
   "form-agreement": "I give my consent to the processing of personal data in accordance with ",
   "form-agreement-terms": "terms *",
-  "form-submit": "Submit",
+  "form-submit": "submit",
   "form-valid-fields-error": "Fill in the required fields",
   "form-valid-resume-ext-error": "Wrong file resolution",
   "form-valid-resume-size-error": "File size must be less than 5MB",

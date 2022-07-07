@@ -12,7 +12,7 @@ function onLangSwitch(e) {
 
 function changeLanguage() {
     if (!localStorage.getItem('language')) {
-        localStorage.setItem('language', 'en');
+        localStorage.setItem('language', 'it');
     }
 
     const lang = localStorage.getItem('language')
