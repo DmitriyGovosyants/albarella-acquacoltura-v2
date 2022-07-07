@@ -31,8 +31,7 @@
 
     @include mq(desktop) {
         &:hover {
-            color: var(--accent-color);
-            background-color: var(--bgc-main);
+            background-color: var(--bgc-third);
         }
     }
 }
