@@ -38,7 +38,7 @@
 
 .vacancies__item {
   color: var(--text-second);
-  background-color: var(--accent-color);
+  background-color: var(--bgc-third);
 
   @include mq(notDesktop) {
     &:not(:last-child) {

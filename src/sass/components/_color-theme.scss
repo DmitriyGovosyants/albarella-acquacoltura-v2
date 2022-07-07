@@ -29,7 +29,7 @@
     /* length */
     --o: 3px;
     /* offset */
-    --c: var(--text-main);
+    --c: var(--bgc-second);
     /* color */
     --w: 3px;
     /* thickness*/
@@ -43,7 +43,7 @@
     height: 12px;
     margin: calc(var(--s) + var(--o) + 10px);
 
-    background-color: var(--text-main);
+    background-color: var(--bgc-second);
     border-radius: 50%;
     
     pointer-events: none;

@@ -11,7 +11,7 @@
 
         background: linear-gradient(1deg, var(--bgc-main) 95%, var(--bgc-linear));
         border-bottom-left-radius: 50px;
-        box-shadow: -3px 3px 10px var(--mob-menu-outer-shadow);
+        box-shadow: -3px 3px 10px var(--box-shadow);
 
         pointer-events: none;
         transform: translateX(120%);
@@ -70,7 +70,7 @@
 }
 
 .menu__mob-icon-open {
-    fill: var(--text-main);
+    fill: var(--bgc-second);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 
     &:hover,
@@ -96,7 +96,7 @@
 }
 
 .menu__mob-icon-close {
-    fill: var(--text-main);
+    fill: var(--bgc-second);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 
     &:hover,

@@ -35,5 +35,5 @@
 .logo__text {
     text-align: center;
     color: var(--text-logo);
-    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(173, 173, 173, 0.5);
+    text-shadow: var(--text-shadow) 1px 1px;;
 }
