@@ -130,8 +130,8 @@
 .vacancies__details-wrapper {
   padding: calc(8 * var(--spacing)) calc(4 * var(--spacing));
 
-  background-color: white;
-  box-shadow: 3px 3px 30px white;
+  background-color: var(--bgc-third);
+  box-shadow: 3px 3px 30px var(--box-shadow);
 
   @include mq(desktop) {
     padding: calc(10 * var(--spacing)) calc(25 * var(--spacing));

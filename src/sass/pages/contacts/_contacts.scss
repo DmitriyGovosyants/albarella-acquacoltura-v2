@@ -27,7 +27,7 @@
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  text-shadow: black 2px 2px;
+  text-shadow: var(--text-shadow) 2px 2px;
   color: var(--text-main);
 
   @include mq(tablet) {
@@ -39,7 +39,7 @@
   padding: calc(3 * var(--spacing));
   font-size: 22px;
   text-shadow: var(--text-shadow) 2px 2px;
-  color: white;
+  color: var(--text-third);
 
   @include mq(tablet) {
     font-size: 26px;

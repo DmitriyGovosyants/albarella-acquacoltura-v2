@@ -2,6 +2,7 @@ import { en_header, it_header } from './data/header';
 import { en_careers_vac, it_careers_vac } from './data/careers-vac';
 import { en_footer, it_footer } from './data/footer';
 import { en_careers_form, it_careers_form } from './data/careers-form';
+import { en_contacts, it_contacts } from './data/contacts';
 import { en_other, it_other } from './data/other';
 
 export const lngData = {
@@ -9,6 +10,7 @@ export const lngData = {
         ...en_header,
 
         ...en_careers_vac,
+        ...en_contacts,
 
         ...en_footer,
 
@@ -19,6 +21,7 @@ export const lngData = {
         ...it_header,
 
         ...it_careers_vac,
+        ...it_contacts,
 
         ...it_footer,
 

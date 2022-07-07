@@ -13,8 +13,8 @@
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  text-shadow: black 2px 2px;
-  color: white;
+  text-shadow: var(--text-shadow) 2px 2px;
+  color: var(--text-third);
 
   background-color: transparent;
   cursor: pointer;
@@ -38,10 +38,10 @@
 
   &::after {
     content: "🢀";
-    margin-left: 20px;
-    animation: google-right 1000ms var(--animation-timing-function) infinite;
+    margin-left: calc(5 * var(--spacing));
+    animation: arrow-right 1000ms var(--animation-timing-function) infinite;
 
-    @keyframes google-right {
+    @keyframes arrow-right {
       0% {
         transform: translateX(0);
       }
@@ -58,10 +58,10 @@
 
   &::before {
     content: "🢂";
-    margin-right: 20px;
-    animation: google-left 1000ms var(--animation-timing-function) infinite;
+    margin-right: calc(5 * var(--spacing));
+    animation: arrow-left 1000ms var(--animation-timing-function) infinite;
 
-    @keyframes google-left {
+    @keyframes arrow-left {
       0% {
         transform: translateX(20%);
       }
