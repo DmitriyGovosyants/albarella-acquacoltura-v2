@@ -19,16 +19,16 @@
   <body>
     <include src="./partials/header-part.html"></include>
     <div class="footer-fixed-wrapper">
-      <main class="page-content page-content__contacts">
+      <main class="page-content">
         <include src="./partials/contacts/contacts.html"></include>
-        <include src="./partials/contacts/map.html"></include>
       </main>
       <include src="./partials/footer-part.html"></include>
     </div>
     <script type="module" src="./index.js"></script>
+    <script src="./js/google-map-toggle.js" type="module"></script>
     <script src="./js/google-map.js"></script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgUsCs0X_BkvnJDOyTL414HV-J-gikNaI&region=IT&language=it&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgUsCs0X_BkvnJDOyTL414HV-J-gikNaI&callback=initMap&v=weekly"
       defer>
     </script>
   </body>

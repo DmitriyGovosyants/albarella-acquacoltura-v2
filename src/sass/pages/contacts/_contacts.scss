@@ -1,10 +1,13 @@
 .contacts {
-  margin-top: calc(15 * var(--spacing));
-  text-align: center;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/contacts/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
-  @include mq(tablet) {
-    margin-top: calc(20 * var(--spacing));
-  }
+.contacts__list {
+  margin-top: calc(20 * var(--spacing));
+  text-align: center;
 }
 
 .contacts__item {
@@ -24,7 +27,7 @@
   font-size: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  text-shadow: var(--text-shadow) 2px -2px;
+  text-shadow: black 2px 2px;
   color: var(--text-main);
 
   @include mq(tablet) {
@@ -35,7 +38,7 @@
 .contacts__link {
   padding: calc(3 * var(--spacing));
   font-size: 22px;
-  text-shadow: var(--text-shadow) 2px -2px;
+  text-shadow: var(--text-shadow) 2px 2px;
   color: white;
 
   @include mq(tablet) {

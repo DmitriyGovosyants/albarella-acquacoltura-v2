@@ -7,6 +7,9 @@ export const refs = {
     vacancies: document.querySelectorAll('.js-vacancy'),
     vacanciesDescription: document.querySelectorAll('.js-vacancy-description'),
     vacanciesCloseBtn: document.querySelectorAll('.js-vacancy-close'),
+
+    map: document.querySelector('.js-map'),
+    mapBtn: document.querySelector('.js-map-btn'),
     
     backToTopBtn: document.querySelector('.js-btn-top'),
     loader: document.querySelector('.loader'),
