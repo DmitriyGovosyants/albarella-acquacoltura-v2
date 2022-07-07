@@ -4,7 +4,7 @@
 }
 
 .address__label {
-  margin-bottom: 15px;
+  margin-bottom: calc(4 * var(--spacing));
   font-size: 20px;
   color: var(--text-main);
 }
@@ -14,7 +14,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 300px;
-  padding: 5px 20px;
+  padding: calc(1 * var(--spacing)) calc(5 * var(--spacing));
 
   font-size: 20px;
   line-height: 30px;

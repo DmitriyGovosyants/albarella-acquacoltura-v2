@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: calc(3 * var(--spacing));
+    padding-bottom: calc(3 * var(--spacing));
 }
 
 .socials__item {
@@ -11,7 +11,7 @@
     height: 44px;
 
     &:not(:first-child) {
-        margin-left: 20px;
+        margin-left: calc(5 * var(--spacing));
     }
 }
 

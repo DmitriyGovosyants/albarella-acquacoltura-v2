@@ -1,10 +1,10 @@
 .careers-about {}
 
 .careers-about__button {
-  margin-top: 20px;
+  margin-top: calc(5 * var(--spacing));
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 30px;
+  padding: calc(4 * var(--spacing)) calc(8 * var(--spacing));
 
   background-color: var(--form-accent-main);
   box-shadow: 3px 5px 0 var(--form-sumbit-shadow);

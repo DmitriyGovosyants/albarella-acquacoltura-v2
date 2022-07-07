@@ -2,27 +2,27 @@
   text-align: center;
 
   @include mq(notDesktop) {
-    margin-top: 30px;
+    margin-top: calc(8 * var(--spacing));
   }
 }
 
 .footer-contacts__text {
-    margin-bottom: 15px;
+    margin-bottom: calc(4 * var(--spacing));
     font-size: 20px;
     color: var(--text-main);
 }
 
 .footer-contacts__item {
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: calc(4 * var(--spacing));
   }
 }
 
 .footer-contacts__link {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-right: calc(2 * var(--spacing));
+  padding-left: calc(2 * var(--spacing));
+  padding-top: calc(1 * var(--spacing));
+  padding-bottom: calc(1 * var(--spacing));
 
   font-size: 20px;
   color: var(--text-third);

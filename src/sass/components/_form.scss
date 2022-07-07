@@ -3,7 +3,7 @@
   max-width: 440px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: calc(10 * var(--spacing));
 
   color: var(--form-text-color-main);
   background-color: var(--form-bgc-color-main);
@@ -27,8 +27,8 @@
     left: 50%;
     width: 100%;
     max-width: 760px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: calc(5 * var(--spacing));
+    padding-bottom: calc(5 * var(--spacing));
 
     transform: translate(-50%, -50%) scale(1);
 
@@ -79,7 +79,7 @@
 }
 
 .form__title {
-  margin-bottom: 30px;
+  margin-bottom: calc(8 * var(--spacing));
 
   font-size: 30px;
   text-align: center;
@@ -90,7 +90,7 @@
 }
 
 .form__item {
-  margin-bottom: 20px;
+  margin-bottom: calc(5 * var(--spacing));
 
   @include mq(desktop) {
     flex-basis: calc((100% - 20px) / 2);
@@ -98,7 +98,7 @@
     &:nth-child(2),
     &:nth-child(4),
     &:nth-child(6) {
-      margin-right: 20px;
+      margin-right: calc(5 * var(--spacing));
     }
 
     &--full-width {
@@ -109,7 +109,7 @@
 
 .form__label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: calc(3 * var(--spacing));
 
   font-size: 18px;
 
@@ -121,7 +121,7 @@
 .form__input {
   width: 100%;
   height: 40px;
-  padding: 0px 20px;
+  padding: 0px calc(5 * var(--spacing))20px;
   border-radius: 5px;
   font-size: 18px;
 
@@ -140,7 +140,7 @@
 
 textarea.form__input {
   min-height: 100px;
-  padding: 10px;
+  padding: calc(3 * var(--spacing));
   resize: vertical;
 
   @include mq(desktop) {
@@ -151,7 +151,7 @@ textarea.form__input {
 .select {
   height: 50px;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px calc(5 * var(--spacing));
 
   font-size: 16px;
   border-radius: 5px;
@@ -198,7 +198,7 @@ textarea.form__input {
   align-items: center;
   min-height: 40px;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px calc(5 * var(--spacing));
 
   font-size: 18px;
   color: var(--form-text-color-main);
@@ -231,7 +231,7 @@ textarea.form__input {
     flex: 0 0 24px;
     align-self: flex-start;
     height: 24px;
-    margin-right: 10px;
+    margin-right: calc(3 * var(--spacing));
 
     background-color: var(--form-bgc-color-checkbox);
     border-radius: 4px;
@@ -274,7 +274,7 @@ textarea.form__input {
   color: var(--form-accent-main);
 
   @include mq(desktop) {
-    margin-left: 5px;
+    margin-left: calc(2 * var(--spacing));
   }
 }
 
@@ -282,8 +282,8 @@ textarea.form__input {
   min-height: 60px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: calc(12 * var(--spacing));
+  padding-right: calc(12 * var(--spacing));
 
   text-transform: uppercase;
 
@@ -292,8 +292,8 @@ textarea.form__input {
   transition: background-color var(--animation-duration) var(--animation-timing-function);
   
   @include mq(tablet) {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(30 * var(--spacing));
+    padding-right: calc(30 * var(--spacing));
   }
 
   &:disabled {

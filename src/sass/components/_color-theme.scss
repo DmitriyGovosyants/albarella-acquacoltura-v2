@@ -11,7 +11,7 @@
     border: none;
 
     @include mq(notDesktop) {
-        margin-top: 20px;
+        margin-top: calc(5 * var(--spacing));
     }
 
     @include mq(tablet-only) {
@@ -20,7 +20,7 @@
     }
 
     @include mq(desktop) {
-        margin-left: 10px;
+        margin-left: calc(3 * var(--spacing));
     }
 }
 

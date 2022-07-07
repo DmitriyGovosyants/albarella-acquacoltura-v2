@@ -1,13 +1,13 @@
 .footer-bottom {
-  margin-top: 60px;
-  padding-top: 20px;
+  margin-top: calc(15 * var(--spacing));
+  padding-top: calc(5 * var(--spacing));
 
   text-align: center;
   border-top: 1px solid var(--think-line);
 
   @include mq(tablet) {
     display: flex;
-    margin-top: 40px;
+    margin-top: calc(10 * var(--spacing));
     justify-content: center;
   }
 }
@@ -16,13 +16,13 @@
   color: var(--text-main);
 
   @include mq(mobile-only) {
-    margin-bottom: 10px;
+    margin-bottom: calc(2 * var(--spacing));
   }
 
   @include mq(tablet) {
     &::after {
       content: "|";
-      margin-left: 5px;
+      margin-left: calc(1 * var(--spacing));
     }
   }
 }
@@ -31,6 +31,6 @@
   color: var(--text-main);
 
   @include mq(tablet) {
-    margin-left: 5px;
+    margin-left: calc(1 * var(--spacing));
   }
 }

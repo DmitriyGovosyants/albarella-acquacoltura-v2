@@ -7,10 +7,10 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    padding-top: 7px;
-    padding-right: 12px;
-    padding-bottom: 12px;
-    padding-left: 16px;
+    padding-top: calc(2 * var(--spacing));
+    padding-bottom: calc(3 * var(--spacing));
+    padding-right: calc(3 * var(--spacing));
+    padding-left: calc(4 * var(--spacing));
 
     font-family: Gloria Hallelujah, sans-serif;
     font-size: 16px;
@@ -22,10 +22,10 @@
     outline: none;
     
     @include mq(tablet) {
-        padding-top: 12px;
-        padding-right: 20px;
-        padding-bottom: 12px;
-        padding-left: 20px;
+        padding-top: calc(3 * var(--spacing));
+        padding-bottom: calc(3 * var(--spacing));
+        padding-right: calc(5 * var(--spacing));
+        padding-left: calc(5 * var(--spacing));
         font-size: 18px;
     }
 

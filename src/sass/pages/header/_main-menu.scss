@@ -39,10 +39,7 @@
 
 .menu__container {
     @include mq(notDesktop) {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 60px;
-        padding-bottom: 20px;
+        padding: calc(15 * var(--spacing)) calc(5 * var(--spacing));
     }
 
     @include mq(tablet-only) {

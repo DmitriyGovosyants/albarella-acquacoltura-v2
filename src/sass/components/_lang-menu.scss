@@ -6,7 +6,7 @@
     }
 
     @include mq(notDesktop) {
-        margin-top: 20px;
+        margin-top: calc(5 * var(--spacing));
     }
 }
 
@@ -14,7 +14,7 @@
     display: flex;
 
     &:not(:last-child) {
-        margin-right: 5px;
+        margin-right: calc(1 * var(--spacing));
 
         &::after {
             content: "";
@@ -22,7 +22,7 @@
             display: block;
             width: 1px;
             height: 50%;
-            margin-left: 5px;
+            margin-left: calc(1 * var(--spacing));
 
             background-color: var(--bgc-second);
         }
@@ -30,7 +30,7 @@
 }
 
 .lang-menu__btn {
-    padding: 10px;
+    padding: calc(3 * var(--spacing));
 
     font-size: 20px;
     text-transform: uppercase;

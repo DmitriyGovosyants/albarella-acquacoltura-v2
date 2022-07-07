@@ -1,13 +1,13 @@
 .join-us {
   @include mq(mobile-only) {
-    margin-top: 30px;
+    margin-top: calc(8 * var(--spacing));
   }
 
   text-align: center;
 }
 
 .join-us__text {
-  margin-bottom: 15px;
+  margin-bottom: calc(4 * var(--spacing));
 
   font-size: 20px;
   color: var(--text-main);

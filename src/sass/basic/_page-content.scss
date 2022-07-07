@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: calc(5 * var(--spacing));
+  padding-right: calc(5 * var(--spacing));
 
   @include mq(mobile) {
     width: 440px;
@@ -21,8 +21,13 @@
 }
 
 .section {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: calc(8 * var(--spacing));
+  padding-bottom: calc(8 * var(--spacing));
+
+  @include mq(desktop) {
+    padding-top: calc(12 * var(--spacing));
+    padding-bottom: calc(12 * var(--spacing));
+  }
 }
 
 .hidden-anchor {
@@ -83,7 +88,7 @@
   justify-content: flex-end;
   align-items: center;
   flex: 1 1 auto;
-  padding: 30px 15px;
+  padding: calc(8 * var(--spacing)) calc(4 * var(--spacing));
 
   background-color: rgba(0, 0, 0, 0.2);
 }
