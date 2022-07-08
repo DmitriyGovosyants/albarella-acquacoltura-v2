@@ -24,21 +24,31 @@
     font-size: 32px;
   }
 
-  &:hover {
-    color: var(--text-main);
+  @include mq(desktop) {
+    &:hover {
+      color: var(--text-main);
+    }
   }
 
   &::after,
   &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
     display: var(--display);
 
     font-size: 22px;
     text-shadow: none;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &::after {
-    content: "\1F880";
     margin-left: calc(5 * var(--spacing));
+
+    background-image: url('../images/contacts/backwards-arrow.svg');
     animation: arrow-right 1000ms var(--animation-timing-function) infinite;
 
     @keyframes arrow-right {
@@ -57,8 +67,9 @@
   }
 
   &::before {
-    content: "\1F882";
     margin-right: calc(5 * var(--spacing));
+  
+    background-image: url('../images/contacts/forward-arrow.svg');
     animation: arrow-left 1000ms var(--animation-timing-function) infinite;
 
     @keyframes arrow-left {
@@ -79,7 +90,6 @@
 
 .google-map__thumb {
   overflow: hidden;
-  
 }
 
 .google-map__init {
