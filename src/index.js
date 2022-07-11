@@ -1,3 +1,4 @@
+import './js/active-nav-link';
 import './js/smooth-scroll';
 import './js/mobile-menu';
 import './js/lng-handler/lng-menu';
