@@ -2,18 +2,15 @@ function getActiveNav() {
   const currentPath = window.document.location.pathname;
   const navLinks = ['products', 'facilities', 'about', 'careers', 'contacts'];
 
-  if (currentPath === '/') {
-    const currentNav = document.querySelector(`.js-nav-home`);
-    currentNav.classList.add('nav__link--is-active');
-    return;
-  } else {
-    navLinks.map(link => {
-      if (currentPath.includes(`/${link}`)) {
-        const currentNav = document.querySelector(`.js-nav-${link}`);
-        return currentNav.classList.add('nav__link--is-active');
-      }
-    })
+  for (let i = 0; i < navLinks.length; i += 1) {
+    if (currentPath.includes(`/${navLinks[i]}`)) {
+      const currentNav = document.querySelector(`.js-nav-${navLinks[i]}`);
+      return currentNav.classList.add('nav__link--is-active');
+    }
   }
+  
+  const currentNav = document.querySelector(`.js-nav-home`);
+  return currentNav.classList.add('nav__link--is-active');
 }
 
 getActiveNav()
