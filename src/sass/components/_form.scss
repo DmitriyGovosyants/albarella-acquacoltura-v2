@@ -7,7 +7,7 @@
 
   color: var(--form-text-color-main);
   background-color: var(--form-bgc-color-main);
-  box-shadow: 3px 3px 5px var(--box-shadow), -3px -3px 5px var(--box-shadow);
+  box-shadow: 3px 3px 20px var(--box-shadow), -3px -3px 20px var(--box-shadow);
   border-radius: 30px;
 
   transform: scale(1);
@@ -231,7 +231,7 @@ textarea.form__input {
   align-items: center;
 
   font-size: 16px;
-  line-height: 140%;
+  line-height: 1.4;
   font-style: italic;
   
   @include mq(desktop) {

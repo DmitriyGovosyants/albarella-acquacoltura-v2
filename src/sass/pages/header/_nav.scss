@@ -61,11 +61,11 @@
 .nav__link {
     position: relative;
     display: block;
-    padding: calc(2.5 * var(--spacing));
+    padding: calc(3.5 * var(--spacing)) calc(2.5 * var(--spacing));
 
     font-size: 28px;
     font-weight: 500;
-    line-height: 40px;
+    // line-height: 3;
     text-transform: capitalize;
     color: var(--text-main);
 
@@ -76,7 +76,7 @@
     }
 
     @include mq(desktop) {
-        padding: calc(2 * var(--spacing));
+        padding: calc(4.5 * var(--spacing)) calc(2 * var(--spacing));
 
         font-size: 20px;
 
